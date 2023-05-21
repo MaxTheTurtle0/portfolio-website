@@ -1,6 +1,9 @@
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap);
+
 body{
-    background-color: bisque;
+    background-color: black;
     color: #ffffff;
+    font-family: 'Fira Code', monospace;
     padding: 0;
     margin: 0;
 }
@@ -14,9 +17,19 @@ section {
 
 .hidden{
     opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
     transition: all 1s;
 }
 
 .show{
     opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#name{
+    display: grid;
+    place-items: center;
+    align-content: center;
 }
