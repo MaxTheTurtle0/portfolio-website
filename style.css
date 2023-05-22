@@ -13,13 +13,43 @@ section {
     place-items: center;
     align-content: center;
     min-height: 100vh;
+    padding: 0 2em;
+}
+
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   top: 0;
+   overflow: hidden;
+   position: sticky;
+   position: -webkit-sticky;
+   background-color: #ffffff;
+}
+
+li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+li a:hover {
+    background-color: #000000;
+    color: #ffffff;
+    display: block;
+}
+
+li{
+    float: left;
 }
 
 .hidden{
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 1500ms;
 }
 
 .show{
