@@ -16,15 +16,70 @@ section {
     padding: 0 2em;
 }
 
-ul {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-   top: 0;
-   overflow: hidden;
-   position: sticky;
-   position: -webkit-sticky;
-   background-color: #ffffff;
+nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.mobile-burger-menu{
+    display: none;
+}
+
+@media (max-width: 29em)
+{
+    nav{
+        position: -webkit-fixed;
+        position: fixed;
+        top: 0;
+        right: 0;
+        inset: 0 0 0 30%;
+        padding: min(30vh, 10rem) 3em;
+        background-color: #ffffff;
+        transform: translateX(100%);
+        transition: transform 350ms ease-in-out;
+    }
+
+    nav[data-visible="true"]{
+        transform: translateX(0%);
+    }
+
+    nav[data-visible="false"]{
+        transform: translateX(100%);
+    }
+
+    .mobile-burger-menu{
+        display: block;
+        position: fixed;
+        color: transparent;
+        background-image: url(/images/burger-menu.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        z-index: 999;
+        border: 0;
+        top: 2rem;
+        right: 2rem;
+        width: 3rem;
+        aspect-ratio: 1;
+    }
+
+    #name{
+        padding-top: 5rem;
+    }
+}
+
+.navigation{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+li{
+    float: left;
 }
 
 li a {
@@ -38,12 +93,8 @@ li a {
 li a:hover {
     background-color: #000000;
     color: #ffffff;
-    display: block;
 }
 
-li{
-    float: left;
-}
 
 .hidden{
     opacity: 0;
@@ -59,7 +110,7 @@ li{
 }
 
 #name{
-    display: grid;
-    place-items: center;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
 }
