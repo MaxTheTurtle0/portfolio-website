@@ -29,7 +29,7 @@ nav{
     display: none;
 }
 
-@media (max-width: 29em)
+@media (max-width: 36em)
 {
     nav{
         position: -webkit-fixed;
@@ -43,6 +43,15 @@ nav{
         transition: transform 350ms ease-in-out;
     }
 
+    .navigation{
+        display: flex;
+        flex-wrap:  wrap;
+    }
+
+    .nav-flex-item{
+        flex-basis: 100%;
+    }
+
     nav[data-visible="true"]{
         transform: translateX(0%);
     }
@@ -54,6 +63,8 @@ nav{
     .mobile-burger-menu{
         display: block;
         position: fixed;
+        padding: 0;
+        margin: 0;
         color: transparent;
         background-image: url(/images/burger-menu.svg);
         background-size: contain;
@@ -66,10 +77,6 @@ nav{
         width: 3rem;
         aspect-ratio: 1;
     }
-
-    #name{
-        padding-top: 5rem;
-    }
 }
 
 .navigation{
@@ -80,11 +87,11 @@ nav{
     background-color: #ffffff;
 }
 
-li{
+.nav-flex-item{
     float: left;
 }
 
-li a {
+.nav-flex-item a {
     display: block;
     color: #000000;
     text-decoration: none;
@@ -92,17 +99,21 @@ li a {
     padding: 1rem 1rem;
 }
 
-li a:hover {
+.nav-flex-item a:hover {
     background-color: #000000;
     color: #ffffff;
+}
+
+.nav-flex-item:last-child{
+    float: right;
 }
 
 
 .hidden{
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1500ms;
+    /* transform: translateX(-100%); */
+    transition: all 1s;
 }
 
 @media(prefers-reduced-motion: reduce)
@@ -115,13 +126,7 @@ li a:hover {
 .show{
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0);
-}
-
-#name{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
+    /*transform: translateX(0);*/
 }
 
 #Projects{
@@ -134,10 +139,27 @@ li a:hover {
 
 #Introduction{
     background-color: #ff7f50;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
 }
 
 #Contact{
     background-color: #FFC0CB;
+}
+
+#github-link{
+    background-image: url(/images/github-mark.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    width: 3rem;
+    aspect-ratio: 1;
+    padding: 0;
 }
 
 .wave-bottom-about-me{
