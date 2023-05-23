@@ -129,15 +129,15 @@ nav{
     /*transform: translateX(0);*/
 }
 
-#Projects{
+#projects{
     background-color: #3c31dd;
 }
 
-#Skills{
+#skills{
     background-color: #00caca;
 }
 
-#Introduction{
+#introduction{
     background-color: #ff7f50;
     display: flex;
     flex-wrap: wrap;
@@ -145,10 +145,33 @@ nav{
     align-items: flex-start;
     justify-content: center;
     text-align: left;
+    font-size: 150%;
 }
 
-#Contact{
+#contact{
     background-color: #FFC0CB;
+}
+
+.soft-and-hard-skills{
+    background-color: #202731;
+    border-radius: 8%;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    width: 10em;
+    height: fit-content;
+}
+
+#hard-skills-list{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+#soft-skills-list{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
 }
 
 #github-link{
@@ -162,6 +185,7 @@ nav{
     padding: 0;
 }
 
+/* Transitions between sections*/
 .wave-bottom-about-me{
     position: absolute;
     bottom: 0;
