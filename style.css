@@ -136,6 +136,10 @@ li a:hover {
     background-color: #ff7f50;
 }
 
+#Contact{
+    background-color: #FFC0CB;
+}
+
 .wave-bottom-about-me{
     position: absolute;
     bottom: 0;
@@ -198,4 +202,25 @@ li a:hover {
 
 .wave-bottom-introduction .shape-fill {
     fill: #202731;
+}
+
+.curve-bottom-skills{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.curve-bottom-skills svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 179px;
+}
+
+.curve-bottom-skills .shape-fill {
+    fill: #FFC0CB;
 }
