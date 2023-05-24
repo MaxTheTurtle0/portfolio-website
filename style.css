@@ -154,12 +154,23 @@ nav{
 
 .soft-and-hard-skills{
     background-color: #202731;
-    border-radius: 8%;
+    border-radius: 1em;
     padding: 1rem;
-    margin: 1rem;
-    text-align: center;
     width: 10em;
-    height: fit-content;
+    text-align: center;
+}
+
+#contact-info{
+    background-color: #202731;
+    border-radius: 1em;
+    padding: 1rem;
+    width: 15em;
+    text-align: center;
+}
+
+#contact-info-list{
+    list-style-type: none;
+    padding: 0;
 }
 
 #hard-skills-list{
