@@ -25,6 +25,10 @@ nav{
     z-index: 10;
 }
 
+h2{
+    font-size: 250%;
+}
+
 .mobile-burger-menu{
     display: none;
 }
@@ -145,32 +149,62 @@ nav{
     align-items: flex-start;
     justify-content: center;
     text-align: left;
-    font-size: 150%;
+    font-size: 200%;
 }
 
 #contact{
     background-color: #FFC0CB;
 }
 
+.my-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
 .soft-and-hard-skills{
     background-color: #202731;
     border-radius: 1em;
     padding: 1rem;
+    margin: 1rem;
     width: 10em;
     text-align: center;
 }
 
 #contact-info{
-    background-color: #202731;
-    border-radius: 1em;
-    padding: 1rem;
-    width: 15em;
-    text-align: center;
+    text-align: left;
+}
+
+#contact-info-list li::before{
+    content: "";
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+    margin-right: 0.5em;
+}
+
+#contact-info-discord::before{
+    display: inline-block;
+    background-image: url(/images/discord-mark.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 1;
+}
+
+#contact-info-email::before{
+    background-image: url(/images/email-mark.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 1;
 }
 
 #contact-info-list{
     list-style-type: none;
     padding: 0;
+    font-size: 130%;
 }
 
 #hard-skills-list{
