@@ -141,6 +141,16 @@ h2{
     background-color: #00caca;
 }
 
+@media (max-height: 60em){
+    .last-p{
+        margin-bottom: 15em;
+    }
+}
+
+.introduction-flex-item{
+    z-index: 1;
+}
+
 #introduction{
     background-color: #ff7f50;
     display: flex;
@@ -154,15 +164,6 @@ h2{
 
 #contact{
     background-color: #FFC0CB;
-}
-
-.my-projects{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
 }
 
 .soft-and-hard-skills{
@@ -267,7 +268,7 @@ h2{
     position: relative;
     display: block;
     width: calc(180% + 1.3px);
-    height: 326px;
+    height: 150px;
 }
 
 .wave-bottom-projects .shape-fill {
