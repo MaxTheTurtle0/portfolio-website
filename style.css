@@ -87,6 +87,12 @@ h2{
     }
 }
 
+@media (max-height: 60em){
+    .last-p{
+        margin-bottom: 15em;
+    }
+}
+
 .navigation{
     list-style-type: none;
     margin: 0;
@@ -160,12 +166,6 @@ h2{
     background-color: #1a212c;
     padding: 1rem;
     border-radius: 1em;
-}
-
-@media (max-height: 60em){
-    .last-p{
-        margin-bottom: 15em;
-    }
 }
 
 .introduction-flex-item{
@@ -264,7 +264,7 @@ h2{
     position: relative;
     display: block;
     width: calc(144% + 1.3px);
-    height: 500px;
+    height: 400px;
 }
 
 .wave-bottom-about-me .shape-fill {
