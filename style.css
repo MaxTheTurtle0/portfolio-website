@@ -64,6 +64,10 @@ h2{
         transform: translateX(100%);
     }
 
+    #skills-content{
+        grid-template-columns: 1fr !important;
+    }
+
     .mobile-burger-menu{
         display: block;
         position: fixed;
@@ -137,8 +141,25 @@ h2{
     background-color: #3c31dd;
 }
 
+#my-projects{
+    background-color: #3c21cd;
+    padding: 1rem;
+    border-radius: 1em;
+}
+
 #skills{
     background-color: #00caca;
+}
+
+#skills-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#about-me-content{
+    background-color: #20212c;
+    padding: 1rem;
+    border-radius: 1em;
 }
 
 @media (max-height: 60em){
@@ -166,20 +187,14 @@ h2{
     background-color: #FFC0CB;
 }
 
-.soft-and-hard-skills{
-    background-color: #00c0c0;
-    border-radius: 1em;
-    padding: 1rem;
-    margin: 1rem;
-    width: 10em;
-    text-align: center;
-}
-
-#contact-info{
+#contact-content{
     text-align: left;
+    background-color: #FFB0BB;
+    padding: 0 1rem 0 1rem;
+    border-radius: 1em;
 }
 
-#contact-info-list li::before{
+#contact-content p::before{
     content: "";
     display: inline-block;
     width: 2em;
@@ -188,7 +203,6 @@ h2{
 }
 
 #contact-info-discord::before{
-    display: inline-block;
     background-image: url(/images/discord-mark.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -202,10 +216,13 @@ h2{
     aspect-ratio: 1;
 }
 
-#contact-info-list{
-    list-style-type: none;
-    padding: 0;
-    font-size: 130%;
+.soft-and-hard-skills{
+    background-color: #00c0c0;
+    border-radius: 1em;
+    padding: 1rem;
+    margin: 1rem;
+    width: 10em;
+    text-align: center;
 }
 
 #hard-skills-list{
