@@ -9,7 +9,7 @@ body{
     overflow-x: hidden;
 }
 
-section {
+section{
     position: relative;
     display: grid;
     place-items: center;
@@ -44,16 +44,24 @@ h2{
         padding: min(30vh, 10rem) 3em;
         background-color: #ffffff;
         transform: translateX(100%);
-        transition: transform 350ms ease-in-out;
+        transition: transform 300ms ease-in-out;
     }
 
     .navigation{
-        display: flex;
+        display: flex !important;
         flex-wrap:  wrap;
     }
 
     .nav-flex-item{
         flex-basis: 100%;
+    }
+    
+    #github-link{
+        display: inline-block !important;
+    }
+
+    .nav-flex-item:last-child{
+        text-align: center;
     }
 
     nav[data-visible="true"]{
@@ -93,6 +101,12 @@ h2{
     }
 }
 
+@media(prefers-reduced-motion: reduce){
+    .hidden{
+        transition: none;
+    }
+}
+
 .navigation{
     list-style-type: none;
     margin: 0;
@@ -128,13 +142,6 @@ h2{
     filter: blur(5px);
     /* transform: translateX(-100%); */
     transition: all 1s;
-}
-
-@media(prefers-reduced-motion: reduce)
-{
-    .hidden{
-        transition: none;
-    }
 }
 
 .show{
@@ -228,7 +235,6 @@ h2{
 #hard-skills-list li{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
 
 #hard-skills-list{
@@ -241,11 +247,13 @@ h2{
 }
 
 #hard-skills-list li img{
-    margin: 0 auto;
+    display: block;
+    margin-left: 2.7em;
     height: 4em;
     width: 3.5em;
     padding: 0.5em;
     transition: transform 250ms ease-in-out;
+    transform: translateX(0) scale(1);
 }
 
 #hard-skills-list img:hover + p{
@@ -270,6 +278,13 @@ h2{
     width: 3rem;
     aspect-ratio: 1;
     padding: 0;
+}
+
+footer{
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 0.5em;
 }
 
 /* Transitions between sections*/
