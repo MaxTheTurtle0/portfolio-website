@@ -201,27 +201,6 @@ h2{
     border-radius: 1em;
 }
 
-#contact-content p::before{
-    content: "";
-    display: inline-block;
-    width: 2em;
-    height: 1em;
-    margin-right: 0.5em;
-}
-
-#contact-info-discord::before{
-    background-image: url(/images/discord-mark.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    aspect-ratio: 1;
-}
-
-#contact-info-email::before{
-    background-image: url(/images/email-mark.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    aspect-ratio: 1;
-}
 
 .soft-and-hard-skills{
     background-color: #00c0c0;
@@ -278,6 +257,23 @@ h2{
     width: 3rem;
     aspect-ratio: 1;
     padding: 0;
+}
+
+#contact-content{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+#contact-content p{
+    margin: 0;
+}
+
+#contact-content img{
+    width: 4em;
+    height: 4em;
 }
 
 footer{
