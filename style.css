@@ -244,6 +244,10 @@ h2{
 }
 
 #soft-skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 3rem;
     list-style-type: none;
     padding: 0;
 }
