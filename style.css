@@ -104,16 +104,20 @@ h2{
         padding: 0 10vw;
     }
 
-    #contact-content{
+    #social-media-content{
         display: flex !important;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    #contact-content img{
+    #social-media-content img{
         width: 3em !important;
         height: 3em !important;
+    }
+
+    #social-media h2{
+        font-size: 200%;
     }
 }
 
@@ -214,11 +218,11 @@ h2{
     font-size: 200%;
 }
 
-#contact{
+#social-media{
     background-color: #FFC0CB;
 }
 
-#contact-content{
+#social-media-content{
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-gap: 1rem;
@@ -228,13 +232,30 @@ h2{
     border-radius: 1em;
 }
 
-#contact-content p{
+#social-media-content p{
     margin: 0;
 }
 
-#contact-content img{
+#social-media-content img{
     width: 4em;
     height: 4em;
+}
+
+#social-media a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#contact-email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#contact-email img{
+    width: 2em;
+    height: 2em;
 }
 
 .soft-and-hard-skills{
