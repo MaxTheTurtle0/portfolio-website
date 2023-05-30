@@ -39,6 +39,10 @@ h2{
 
 @media (max-width: 36em)
 {
+    section{
+        padding: 0 15vw;
+    }
+
     nav{
         position: -webkit-fixed;
         position: fixed;
@@ -51,8 +55,12 @@ h2{
         transition: transform 300ms ease-in-out;
     }
 
-    section{
-        padding: 0 15vw;
+    nav[data-visible="true"]{
+        transform: translateX(0%);
+    }
+
+    nav[data-visible="false"]{
+        transform: translateX(100%);
     }
 
     .navigation{
@@ -70,14 +78,6 @@ h2{
 
     #github-link{
         display: inline-block !important;
-    }
-
-    nav[data-visible="true"]{
-        transform: translateX(0%);
-    }
-
-    nav[data-visible="false"]{
-        transform: translateX(100%);
     }
 
     #skills-content{
@@ -108,6 +108,14 @@ h2{
         padding: 0 10vw;
     }
 
+    nav{
+        padding: min(30vh, 10rem) 1em;
+    }
+
+    #social-media{
+        padding: 0 1rem;
+    }
+
     #social-media-content{
         display: flex !important;
         flex-direction: column;
@@ -122,10 +130,6 @@ h2{
 
     #social-media h2{
         font-size: 200%;
-    }
-
-    nav{
-        padding: min(30vh, 10rem) 1em;
     }
 }
 
