@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap);
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #202731;
     color: #ffffff;
@@ -59,13 +63,13 @@ h2{
     .nav-flex-item{
         flex-basis: 100%;
     }
-    
-    #github-link{
-        display: inline-block !important;
-    }
 
     .nav-flex-item:last-child{
         text-align: center;
+    }
+
+    #github-link{
+        display: inline-block !important;
     }
 
     nav[data-visible="true"]{
@@ -118,6 +122,10 @@ h2{
 
     #social-media h2{
         font-size: 200%;
+    }
+
+    nav{
+        padding: min(30vh, 10rem) 1em;
     }
 }
 
