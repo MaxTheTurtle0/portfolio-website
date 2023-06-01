@@ -37,114 +37,6 @@ h2{
     display: none;
 }
 
-@media (max-width: 36em)
-{
-    section{
-        padding: 0 15vw;
-    }
-
-    nav{
-        position: -webkit-fixed;
-        position: fixed;
-        top: 0;
-        right: 0;
-        inset: 0 0 0 30%;
-        padding: min(30vh, 10rem) 3em;
-        background-color: #ffffff;
-        transform: translateX(100%);
-        transition: transform 300ms ease-in-out;
-    }
-
-    nav[data-visible="true"]{
-        transform: translateX(0%);
-    }
-
-    nav[data-visible="false"]{
-        transform: translateX(100%);
-    }
-
-    .navigation{
-        display: flex !important;
-        flex-wrap:  wrap;
-    }
-
-    .nav-flex-item{
-        flex-basis: 100%;
-    }
-
-    .nav-flex-item:last-child{
-        text-align: center;
-    }
-
-    #github-link{
-        display: inline-block !important;
-    }
-
-    #skills-content{
-        grid-template-columns: 1fr !important;
-    }
-
-    .mobile-burger-menu{
-        display: block;
-        position: fixed;
-        padding: 0;
-        margin: 0;
-        color: transparent;
-        background-image: url(/images/burger-menu.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        z-index: 999;
-        border: 0;
-        top: 2rem;
-        right: 2rem;
-        width: 3rem;
-        aspect-ratio: 1;
-    }
-}
-
-@media (max-width: 460px){
-    section{
-        padding: 0 10vw;
-    }
-
-    nav{
-        padding: min(30vh, 10rem) 1em;
-    }
-
-    #social-media{
-        padding: 0 1rem;
-    }
-
-    #social-media-content{
-        display: flex !important;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #social-media-content img{
-        width: 3em !important;
-        height: 3em !important;
-    }
-
-    #social-media h2{
-        font-size: 200%;
-    }
-}
-
-
-@media (max-height: 60em){
-    .last-p{
-        margin-bottom: 15em;
-    }
-}
-
-@media(prefers-reduced-motion: reduce){
-    .hidden{
-        transition: none;
-    }
-}
 
 .navigation{
     list-style-type: none;
@@ -258,6 +150,13 @@ h2{
     color: #FFFFFF;
 }
 
+#contact-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
 #contact-email{
     display: flex;
     align-items: center;
@@ -336,6 +235,120 @@ footer{
     color: #000000;
     text-align: center;
     padding: 0.5em;
+}
+
+/* media queries for mobile devices */
+
+@media (max-width: 36em){
+    section{
+        padding: 0 15vw;
+    }
+
+    nav{
+        position: -webkit-fixed;
+        position: fixed;
+        top: 0;
+        right: 0;
+        inset: 0 0 0 30%;
+        padding: min(30vh, 10rem) 3em;
+        background-color: #ffffff;
+        transform: translateX(100%);
+        transition: transform 300ms ease-in-out;
+    }
+
+    nav[data-visible="true"]{
+        transform: translateX(0%);
+    }
+
+    nav[data-visible="false"]{
+        transform: translateX(100%);
+    }
+
+    .navigation{
+        display: flex !important;
+        flex-wrap:  wrap;
+    }
+
+    .nav-flex-item{
+        flex-basis: 100%;
+    }
+
+    .nav-flex-item:last-child{
+        text-align: center;
+    }
+
+    #github-link{
+        display: inline-block !important;
+    }
+
+    #skills-content{
+        grid-template-columns: 1fr !important;
+    }
+
+    .mobile-burger-menu{
+        display: block;
+        position: fixed;
+        padding: 0;
+        margin: 0;
+        color: transparent;
+        background-image: url(/images/burger-menu.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        z-index: 999;
+        border: 0;
+        top: 2rem;
+        right: 2rem;
+        width: 3rem;
+        aspect-ratio: 1;
+    }
+
+    #contact-footer{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media (max-width: 460px){
+    section{
+        padding: 0 10vw;
+    }
+
+    nav{
+        padding: min(30vh, 10rem) 1em;
+    }
+
+    #social-media{
+        padding: 0 1rem;
+    }
+
+    #social-media-content{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #social-media-content img{
+        width: 3em !important;
+        height: 3em !important;
+    }
+
+    #social-media h2{
+        font-size: 200%;
+    }
+}
+
+@media (max-height: 60em){
+    .last-p{
+        margin-bottom: 15em;
+    }
+}
+
+@media(prefers-reduced-motion: reduce){
+    .hidden{
+        transition: none;
+    }
 }
 
 /* Transitions between sections*/
