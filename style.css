@@ -416,7 +416,7 @@ footer{
     fill: #202731;
 }
 
-.curve-bottom-skills{
+.curve-bottom-skills {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -429,8 +429,8 @@ footer{
 .curve-bottom-skills svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
-    height: 179px;
+    width: calc(108% + 1.3px);
+    height: 150px;
 }
 
 .curve-bottom-skills .shape-fill {
