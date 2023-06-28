@@ -9,9 +9,6 @@
     <script defer src="app.js"></script>
 </head>
 <body>
-    <header>
-        <button class="mobile-burger-menu" aria-controls="navigation" aria-expanded="false">Menu<span class="sr-only"></span></button>
-    </header>
     <nav class="navigationbar" data-visible="false">
         <ul class="navigation">
             <li class="nav-flex-item"><a href="#about-me">About_me()</a></li>
@@ -21,104 +18,111 @@
             <li class="nav-flex-item"><a href="https://github.com/MaxTheTurtle0" id="github-link"></a></li>
         </ul>
     </nav>
-    <section id="introduction">
-        <h4 class="introduction-flex-item">Hi, my name is</h4>
-        <h1 class="introduction-flex-item">Andrei Antonescu</h1>
-        <h1 class="introduction-flex-item">I am a software engineer.</h1>
-        <div class="wave-bottom-introduction">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
-    </section>
-    <section id="about-me">
-        <div class="wave-bottom-about-me">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
-        <h2 class="hidden">About_me()</h2>
-        <div id="about-me-content" class="last-p">
-            <p class="hidden">
-                I am a 16-year-old student living in Germany. My passion is programming, and I am currently taking the CS50x course, which is helping me expand my knowledge and skills in computer science. Additionally, I am focusing on learning Python and exploring various GUI frameworks.  
-            </p>
-        </div>
-    </section>
-    <section id="projects">
-        <div class="wave-bottom-projects">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
-        <h2 class="hidden">Projects()</h2>
-        <div id="my-projects" class="last-p">
+    <header>
+        <button class="mobile-burger-menu" aria-controls="navigation" aria-expanded="false">Menu<span class="sr-only"></span></button>
+        <section id="introduction">
             <div>
-                <h3 class="hidden">UNIT-CONVERTER</h3>
+                <h4 class="introduction-flex-item">Hi, my name is</h4>
+                <h1 class="introduction-flex-item">Andrei Antonescu</h1>
+                <h1 class="introduction-flex-item" id="introduction-last-item">I am a software engineer.</h1>
+            </div>
+            <div class="wave-bottom-introduction">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="about-me">
+            <div class="wave-bottom-about-me">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <h2 class="hidden">About_me()</h2>
+            <div id="about-me-content" class="last-p">
                 <p class="hidden">
-                    My first project was a simple unit converter that I made using Python and the Customtkinter. It converts between various units of length, weight, temperature, volume and pressure. It also has a dark mode.
+                    I am a 16-year-old student living in Germany. My passion is programming, and I am currently taking the CS50x course, which is helping me expand my knowledge and skills in computer science. Additionally, I am focusing on learning Python and exploring various GUI frameworks.  
                 </p>
             </div>
-            <div>
-                <h3 class="hidden">GUESS THE QUOTE</h3>
-                <p class="hidden">
-                    I made a game using Python and kivymd for the GUI. It is a simple game where you have to guess the author of a quote. It uses firebase to store the data and to handle user authentication.
-                </p>
+        </section>
+        <section id="projects">
+            <div class="wave-bottom-projects">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
             </div>
-            <div>
-                <h3 class="hidden">CALCULATOR</h3>
-                <p class="hidden">
-                    I made a simple calculator using python and kivy for the GUI. It can perform basic arithmetic operations.
-                </p>
+            <h2 class="hidden">Projects()</h2>
+            <div id="my-projects" class="last-p">
+                <div>
+                    <h3 class="hidden"><a href="https://github.com/MaxTheTurtle0/unit-converter">UNIT CONVERTER</a></h3>
+                    <p class="hidden">
+                        My first project was a simple unit converter that I made using Python and the Customtkinter. It converts between various units of length, weight, temperature, volume and pressure. It also has a dark mode.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="hidden">GUESS THE QUOTE</h3>
+                    <p class="hidden">
+                        I made a web app using SvelteKit. It is a game where you have to guess the author of a quote. I used firebase to store the quotes and for the authentication. 
+                    </p>
+                </div>
+                <div>
+                    <h3 class="hidden">CALCULATOR</h3>
+                    <p class="hidden">
+                        I made a simple calculator using python and kivy for the GUI. It can perform basic arithmetic operations.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="hidden">PORTFOLIO WEBSITE</h3>
+                    <p class="hidden">
+                        I made this website using HTML, CSS and a bit of JavaScript.
+                    </p>
+                </div>
             </div>
-            <div>
-                <h3 class="hidden">PORTFOLIO WEBSITE</h3>
-                <p class="hidden">
-                    I made this website using HTML, CSS and a bit of JavaScript.
-                </p>
+        </section>
+        <section id="skills">
+            <div class="curve-bottom-skills">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
             </div>
-        </div>
-    </section>
-    <section id="skills">
-        <div class="curve-bottom-skills">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
-        <h2 class="hidden">Skills()</h2>
-        <div id="skills-content">
-            <div class="soft-and-hard-skills hidden">
-                <h3>HARD SKILLS</h3>
-                <ul id="hard-skills-list">
-                    <li><img src="/images/python-mark.svg" alt="Python Logo SVG"><p>Python</p></li>
-                    <li><img src="images/c-mark.svg" alt="C Logo SVG"><p>C*</p></li>
-                    <li><img src="images/HTML5-mark.svg" alt="HTML5 Logo SVG"><p>HTML</p></li>
-                    <li><img src="images/CSS3-mark.svg" alt="CSS3 Logo SVG"><p>CSS*</p></li>
-                    <li><img src="images/sqlite-mark.svg" alt="SQL Logo SVG"><p>SQLite</p></li>
-                </ul>
+            <h2 class="hidden">Skills()</h2>
+            <div id="skills-content">
+                <div class="soft-and-hard-skills hidden">
+                    <h3>HARD SKILLS</h3>
+                    <ul id="hard-skills-list">
+                        <li><img src="/images/python-mark.svg" alt="Python Logo SVG"><!--<p>Python</p>--></li>
+                        <li><img src="images/c-mark.svg" alt="C Logo SVG"><!--<p>C*</p>--></li>
+                        <li><img src="images/HTML5-mark.svg" alt="HTML5 Logo SVG"><!--<p>HTML</p>--></li>
+                        <li><img src="images/CSS3-mark.svg" alt="CSS3 Logo SVG"><!--<p>CSS*</p>--></li>
+                        <li><img src="images/sqlite-mark.svg" alt="SQL Logo SVG"><!--<p>SQLite</p>--></li>
+                    </ul>
+                </div>
+                <div class="soft-and-hard-skills hidden">
+                    <h3>SOFT SKILLS</h3>
+                    <ul id="soft-skills-list">
+                        <li>Problem Solving</li>
+                        <li>Teamwork</li>
+                        <li>Communication</li>
+                        <li>Time Management</li>
+                        <li>Work Ethic</li>
+                    </ul>
+                </div>
             </div>
-            <div class="soft-and-hard-skills hidden">
-                <h3>SOFT SKILLS</h3>
-                <ul id="soft-skills-list">
-                    <li>Problem Solving</li>
-                    <li>Teamwork</li>
-                    <li>Communication</li>
-                    <li>Time Management</li>
-                    <li>Work Ethic</li>
-                </ul>
+            <div class="last-p"></div>
+        </section>
+        <section id="social-media">
+            <h2 class="hidden">Social_Media()</h2>
+            <div class="hidden" id="social-media-content">
+                <img src="images/discord-mark.svg" alt="Discord Icon SVG"><p id="social-media-info">maxtheturtle0</p>
+                <a href="https://www.youtube.com/channel/UCdOTbcew6jv7cjx8o1Wqhig">
+                    <img src="images/youtube-mark.svg" alt="YouTube Icon SVG">
+                </a>
+                <a href="https://www.youtube.com/channel/UCdOTbcew6jv7cjx8o1Wqhig">MaxTheTurtle0</a>
             </div>
-        </div>
-        <div class="last-p"></div>
-    </section>
-    <section id="social-media">
-        <h2 class="hidden">Social_Media()</h2>
-        <div class="hidden" id="social-media-content">
-            <img src="images/discord-mark.svg" alt="Discord Icon SVG"><p id="social-media-info">Max the turtle#8191</p>
-            <a href="https://www.youtube.com/channel/UCdOTbcew6jv7cjx8o1Wqhig">
-                <img src="images/youtube-mark.svg" alt="YouTube Icon SVG">
-            </a>
-            <a href="https://www.youtube.com/channel/UCdOTbcew6jv7cjx8o1Wqhig">MaxTheTurtle0</a>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer>
         <div id="contact-footer">
             <p>Contact me via Email:</p>
