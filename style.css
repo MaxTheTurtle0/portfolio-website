@@ -30,7 +30,11 @@ nav{
 }
 
 h2{
-    font-size: 250%;
+    font-size: 300%;
+}
+
+h3{
+    font-size: 150%;
 }
 
 a {
@@ -101,7 +105,7 @@ a {
 
 #skills-content{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
 }
 
 #about-me-content{
@@ -182,27 +186,31 @@ a {
     border-radius: 1em;
     padding: 1rem;
     margin: 1rem;
-    width: 10em;
     text-align: center;
 }
 
-#hard-skills-list li{
-    display: flex;
-    align-items: center;
-}
 
 #hard-skills-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     list-style-type: none;
     padding: 0;
 }
 
-#hard-skills-list p{
+/*#hard-skills-list li{
+    display: flex;
+    align-items: center;
+}*/
+
+/*#hard-skills-list p{
     display: none;
 }
 
-#hard-skills-list li img{
+#hard-skills-list img:hover + p{
     display: block;
-    margin-left: 2.7em;
+}*/
+
+#hard-skills-list li img{
     height: 4em;
     width: 3.5em;
     padding: 0.5em;
@@ -210,25 +218,19 @@ a {
     transform: scale(1);
 }
 
-#hard-skills-list img:hover + p{
-    display: block;
-}
-
 #hard-skills-list img:hover{
     transform: scale(1.4);
 }
 
 #soft-skills-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     list-style-type: none;
-    padding: 0;
+    padding: 0.5em;
 }
 
 #github-link{
-    background-image: url(/images/github-mark.svg);
+    background-image: url(/images/github-icon.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -247,7 +249,7 @@ footer{
 
 /* media queries for mobile devices */
 
-@media (max-width: 36em){
+@media (max-width: 580px){
     section{
         padding: 0 15vw;
     }
@@ -273,7 +275,7 @@ footer{
     }
 
     .navigation{
-        display: flex !important;
+        display: flex;
         flex-wrap:  wrap;
     }
 
@@ -286,11 +288,11 @@ footer{
     }
 
     #github-link{
-        display: inline-block !important;
+        display: inline-block;
     }
 
-    #skills-content{
-        grid-template-columns: 1fr !important;
+    #hard-skills-list{
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .mobile-burger-menu{
@@ -326,20 +328,30 @@ footer{
         padding: min(30vh, 10rem) 1em;
     }
 
+    #hard-skills-list li img {
+        height: 4em;
+        width: 3.5em;
+    }
+
+    #soft-skills-list{
+        grid-template-columns: 1fr;
+    }
+
+
     #social-media{
         padding: 0 1rem;
     }
 
     #social-media-content{
-        display: flex !important;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
     #social-media-content img{
-        width: 3em !important;
-        height: 3em !important;
+        width: 3em;
+        height: 3em;
     }
 
     #social-media h2{

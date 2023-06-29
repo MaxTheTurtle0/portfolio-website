@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andrei Antoenscu's portfolio">
     <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="app.js"></script>
@@ -11,15 +11,15 @@
 <body>
     <nav class="navigationbar" data-visible="false">
         <ul class="navigation">
-            <li class="nav-flex-item"><a href="#about-me">About_me()</a></li>
-            <li class="nav-flex-item"><a href="#projects">Projects()</a></li>
-            <li class="nav-flex-item"><a href="#skills">Skills()</a></li>
-            <li class="nav-flex-item"><a href="#social-media">Social_Media()</a></li>
-            <li class="nav-flex-item"><a href="https://github.com/MaxTheTurtle0" id="github-link"></a></li>
+            <li class="nav-flex-item"><a href="#about-me">about_me()</a></li>
+            <li class="nav-flex-item"><a href="#projects">projects()</a></li>
+            <li class="nav-flex-item"><a href="#skills">skills()</a></li>
+            <li class="nav-flex-item"><a href="#social-media">social_media()</a></li>
+            <li class="nav-flex-item"><a href="https://github.com/MaxTheTurtle0" title="github-link" id="github-link"></a></li>
         </ul>
     </nav>
     <header>
-        <button class="mobile-burger-menu" aria-controls="navigation" aria-expanded="false">Menu<span class="sr-only"></span></button>
+        <button class="mobile-burger-menu" type="button" aria-controls="navigation" aria-expanded="false">Menu<span class="sr-only"></span></button>
         <section id="introduction">
             <div>
                 <h4 class="introduction-flex-item">Hi, my name is</h4>
@@ -40,10 +40,10 @@
                     <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
                 </svg>
             </div>
-            <h2 class="hidden">About_me()</h2>
+            <h2 class="hidden">about_me()</h2>
             <div id="about-me-content" class="last-p">
                 <p class="hidden">
-                    I am a 16-year-old student living in Germany. My passion is programming, and I am currently taking the CS50x course, which is helping me expand my knowledge and skills in computer science. Additionally, I am focusing on learning Python and exploring various GUI frameworks.  
+                    I am a 16-year-old student living in Germany. My passion is programming, and I am currently taking the CS50x course, which is helping me expand my knowledge and skills in computer science. I have a fair amount of experience with Python and some Python UI frameworks like Tkinter and Kivy. I also have some experience with HTML, CSS and JavaScript. Having said that I also have a basic understanding of C, due to CS50x but currently I focus more on web development, hence I am learning SvelteKit.
                 </p>
             </div>
         </section>
@@ -53,7 +53,7 @@
                     <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
                 </svg>
             </div>
-            <h2 class="hidden">Projects()</h2>
+            <h2 class="hidden">projects()</h2>
             <div id="my-projects" class="last-p">
                 <div>
                     <h3 class="hidden"><a href="https://github.com/MaxTheTurtle0/unit-converter">UNIT CONVERTER</a></h3>
@@ -87,16 +87,17 @@
                     <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
                 </svg>
             </div>
-            <h2 class="hidden">Skills()</h2>
+            <h2 class="hidden">skills()</h2>
             <div id="skills-content">
                 <div class="soft-and-hard-skills hidden">
                     <h3>HARD SKILLS</h3>
                     <ul id="hard-skills-list">
-                        <li><img src="/images/python-mark.svg" alt="Python Logo SVG"><!--<p>Python</p>--></li>
-                        <li><img src="images/c-mark.svg" alt="C Logo SVG"><!--<p>C*</p>--></li>
-                        <li><img src="images/HTML5-mark.svg" alt="HTML5 Logo SVG"><!--<p>HTML</p>--></li>
-                        <li><img src="images/CSS3-mark.svg" alt="CSS3 Logo SVG"><!--<p>CSS*</p>--></li>
-                        <li><img src="images/sqlite-mark.svg" alt="SQL Logo SVG"><!--<p>SQLite</p>--></li>
+                        <li><img src="/images/python-icon.svg" alt="Python Logo SVG"><!--<p>Python</p>--></li>
+                        <li><img src="/images/javascript-icon.svg" alt="Javascript Logo SVG"></li>
+                        <li><img src="images/c-icon.svg" alt="C Logo SVG"><!--<p>C*</p>--></li>
+                        <li><img src="images/HTML5-icon.svg" alt="HTML5 Logo SVG"><!--<p>HTML</p>--></li>
+                        <li><img src="images/CSS3-icon.svg" alt="CSS3 Logo SVG"><!--<p>CSS*</p>--></li>
+                        <li><img src="images/sqlite-icon.svg" alt="SQL Logo SVG"><!--<p>SQLite</p>--></li>
                     </ul>
                 </div>
                 <div class="soft-and-hard-skills hidden">
@@ -113,11 +114,11 @@
             <div class="last-p"></div>
         </section>
         <section id="social-media">
-            <h2 class="hidden">Social_Media()</h2>
+            <h2 class="hidden">social_media()</h2>
             <div class="hidden" id="social-media-content">
-                <img src="images/discord-mark.svg" alt="Discord Icon SVG"><p id="social-media-info">maxtheturtle0</p>
+                <img src="images/discord-icon.svg" alt="Discord Icon SVG"><p id="social-media-info">maxtheturtle0</p>
                 <a href="https://www.youtube.com/channel/UCdOTbcew6jv7cjx8o1Wqhig">
-                    <img src="images/youtube-mark.svg" alt="YouTube Icon SVG">
+                    <img src="images/youtube-icon.svg" alt="YouTube Icon SVG">
                 </a>
                 <a href="https://www.youtube.com/channel/UCdOTbcew6jv7cjx8o1Wqhig">MaxTheTurtle0</a>
             </div>
@@ -127,16 +128,11 @@
         <div id="contact-footer">
             <p>Contact me via Email:</p>
             <div id="contact-email">
-                <img src="images/email-mark.svg" alt="EMail Icon SVG">
+                <img src="images/email-icon.svg" alt="EMail Icon SVG">
                 <p>antonescu496@gmail.com</p>
             </div>
         </div>
-        <p>
-            Copyright © 2023 Andrei Antonescu. All rights reserved.
-        </p>
-        <p>
-            * - fundamental knowledge
-        </p>
+        <p>Copyright © 2023 Andrei Antonescu. All rights reserved.</p>
     </footer>
 </body>
 </html>
