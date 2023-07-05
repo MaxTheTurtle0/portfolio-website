@@ -26,7 +26,7 @@ nav{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 3;
 }
 
 h2{
@@ -40,6 +40,11 @@ h3{
 a {
     text-decoration: none;
     color: #fff;
+}
+
+
+.last-p {
+    margin-bottom: 20vh;
 }
 
 .mobile-burger-menu{
@@ -247,7 +252,7 @@ footer{
     padding: 0.5em;
 }
 
-/* media queries for mobile devices */
+/* media queries for mobile devices and reducing motion */
 
 @media (max-width: 580px){
     section{
@@ -305,7 +310,7 @@ footer{
         background-size: contain;
         background-repeat: no-repeat;
         background-color: transparent;
-        z-index: 999;
+        z-index: 4;
         border: 0;
         top: 2rem;
         right: 2rem;
@@ -321,7 +326,7 @@ footer{
 
 @media (max-width: 460px){
     section{
-        padding: 0 10vw;
+        padding: 5vw;
     }
 
     nav{
@@ -336,7 +341,6 @@ footer{
     #soft-skills-list{
         grid-template-columns: 1fr;
     }
-
 
     #social-media{
         padding: 0 1rem;
@@ -357,11 +361,25 @@ footer{
     #social-media h2{
         font-size: 200%;
     }
-}
 
-@media (max-height: 60em){
-    .last-p{
-        margin-bottom: 15em;
+    /* Transitions between sections*/
+
+    .wave-bottom-about-me svg {
+        height: 200px !important;
+    }
+
+    .wave-bottom-projects svg {
+        width: calc(180% + 1.3px) !important;
+        height: 75px;
+    }
+
+    .wave-bottom-introduction svg {
+        height: 75px !important;
+    }
+
+
+    .curve-bottom-skills svg {
+        height: 75px !important;
     }
 }
 
