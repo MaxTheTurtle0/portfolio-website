@@ -2,12 +2,12 @@
 
 html{
     scroll-behavior: smooth;
+    font-family: 'Fira Code', monospace;
 }
 
 body{
     background-color: #202731;
     color: #ffffff;
-    font-family: 'Fira Code', monospace;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -83,14 +83,12 @@ a {
 .hidden{
     opacity: 0;
     filter: blur(5px);
-    /* transform: translateX(-100%); */
     transition: all 1s;
 }
 
 .show{
     opacity: 1;
     filter: blur(0);
-    /*transform: translateX(0);*/
 }
 
 #projects{
@@ -202,19 +200,6 @@ a {
     padding: 0;
 }
 
-/*#hard-skills-list li{
-    display: flex;
-    align-items: center;
-}*/
-
-/*#hard-skills-list p{
-    display: none;
-}
-
-#hard-skills-list img:hover + p{
-    display: block;
-}*/
-
 #hard-skills-list li img{
     height: 4em;
     width: 3.5em;
@@ -251,8 +236,6 @@ footer{
     text-align: center;
     padding: 0.5em;
 }
-
-/* media queries for mobile devices and reducing motion */
 
 @media (max-width: 580px){
     section{
@@ -362,8 +345,6 @@ footer{
         font-size: 200%;
     }
 
-    /* Transitions between sections*/
-
     .wave-bottom-about-me svg {
         height: 200px !important;
     }
@@ -389,7 +370,6 @@ footer{
     }
 }
 
-/* Transitions between sections*/
 .wave-bottom-about-me{
     position: absolute;
     bottom: 0;
