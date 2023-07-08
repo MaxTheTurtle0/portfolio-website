@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap);
 
-html{
+html {
     scroll-behavior: smooth;
     font-family: 'Fira Code', monospace;
 }
 
-body{
+body {
     background-color: #202731;
     color: #ffffff;
     padding: 0;
@@ -13,7 +13,7 @@ body{
     overflow-x: hidden;
 }
 
-section{
+section {
     position: relative;
     display: grid;
     place-items: center;
@@ -22,18 +22,18 @@ section{
     padding: 0 20vw;
 }
 
-nav{
+nav {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 3;
 }
 
-h2{
+h2 {
     font-size: 300%;
 }
 
-h3{
+h3 {
     font-size: 150%;
 }
 
@@ -42,16 +42,15 @@ a {
     color: #fff;
 }
 
-
 .last-p {
     margin-bottom: 20vh;
 }
 
-.mobile-burger-menu{
+.mobile-burger-menu {
     display: none;
 }
 
-.navigation{
+.navigation {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -59,7 +58,7 @@ a {
     background-color: #ffffff;
 }
 
-.nav-flex-item{
+.nav-flex-item {
     float: left;
 }
 
@@ -70,62 +69,84 @@ a {
     padding: 1rem 1rem;
 }
 
-.nav-flex-item a:hover {
+.nav-flex-item a:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0%;
     background-color: #000000;
-    color: #ffffff;
+    transition: width .3s;
 }
 
-.nav-flex-item:last-child{
+.nav-flex-item a:hover:after {
+    width: 100%;
+}
+
+.nav-flex-item:last-child a:after {
+    display: none;
+}
+
+.nav-flex-item:last-child {
     float: right;
 }
 
 
-.hidden{
+.hidden {
     opacity: 0;
     filter: blur(5px);
     transition: all 1s;
 }
 
-.show{
+.show {
     opacity: 1;
     filter: blur(0);
 }
 
-#projects{
+.project-icons {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+}
+
+.project-icons-container a:hover + .project-icons {
+    display: block;
+}
+
+#projects {
     background-color: #3c31dd;
 }
 
-#my-projects{
+#my-projects {
     background-color: #3c21cd;
     padding: 1rem;
     border-radius: 1em;
 }
 
-#skills{
+#skills {
     background-color: #00caca;
     padding: 0 10vw;
 }
 
-#skills-content{
+#skills-content {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-#about-me-content{
+#about-me-content {
     background-color: #1a212c;
     padding: 1rem;
     border-radius: 1em;
 }
 
-.introduction-flex-item{
+.introduction-flex-item {
     z-index: 1;
 }
 
-#introduction-last-item{
+#introduction-last-item {
     padding-bottom: 5rem;
 }
 
-#introduction{
+#introduction {
     background-color: #ff7f50;
     display: flex;
     flex-wrap: wrap;
@@ -136,11 +157,11 @@ a {
     font-size: 200%;
 }
 
-#social-media{
+#social-media {
     background-color: #FFC0CB;
 }
 
-#social-media-content{
+#social-media-content {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-gap: 1rem;
@@ -150,41 +171,41 @@ a {
     border-radius: 1em;
 }
 
-#social-media-content p{
+#social-media-content p {
     margin: 0;
 }
 
-#social-media-content img{
+#social-media-content img {
     width: 4em;
     height: 4em;
     transition: 250ms ease-in-out;
     transform: scale(1);
 }
 
-#social-media-content img:hover{
+#social-media-content img:hover {
     transform: scale(1.2);
 }
 
-#contact-footer{
+#contact-footer {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
 }
 
-#contact-email{
+#contact-email {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
 }
 
-#contact-email img{
+#contact-email img {
     width: 2em;
     height: 2em;
 }
 
-.soft-and-hard-skills{
+.soft-and-hard-skills {
     background-color: #00c0c0;
     border-radius: 1em;
     padding: 1rem;
@@ -193,14 +214,14 @@ a {
 }
 
 
-#hard-skills-list{
+#hard-skills-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     list-style-type: none;
     padding: 0;
 }
 
-#hard-skills-list li img{
+#hard-skills-list li img {
     height: 4em;
     width: 3.5em;
     padding: 0.5em;
@@ -208,18 +229,18 @@ a {
     transform: scale(1);
 }
 
-#hard-skills-list img:hover{
+#hard-skills-list img:hover {
     transform: scale(1.4);
 }
 
-#soft-skills-list{
+#soft-skills-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     list-style-type: none;
     padding: 0.5em;
 }
 
-#github-link{
+#github-link {
     background-image: url(/images/github-icon.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -230,19 +251,19 @@ a {
     padding: 0;
 }
 
-footer{
+footer {
     background-color: #ffffff;
     color: #000000;
     text-align: center;
     padding: 0.5em;
 }
 
-@media (max-width: 580px){
-    section{
+@media (max-width: 580px) {
+    section {
         padding: 0 15vw;
     }
 
-    nav{
+    nav {
         position: -webkit-fixed;
         position: fixed;
         top: 0;
@@ -254,36 +275,36 @@ footer{
         transition: transform 300ms ease-in-out;
     }
 
-    nav[data-visible="true"]{
+    nav[data-visible="true"] {
         transform: translateX(0%);
     }
 
-    nav[data-visible="false"]{
+    nav[data-visible="false"] {
         transform: translateX(100%);
     }
 
-    .navigation{
+    .navigation {
         display: flex;
         flex-wrap:  wrap;
     }
 
-    .nav-flex-item{
+    .nav-flex-item {
         flex-basis: 100%;
     }
 
-    .nav-flex-item:last-child{
+    .nav-flex-item:last-child {
         text-align: center;
     }
 
-    #github-link{
+    #github-link {
         display: inline-block;
     }
 
-    #hard-skills-list{
+    #hard-skills-list {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .mobile-burger-menu{
+    .mobile-burger-menu {
         display: block;
         position: fixed;
         padding: 0;
@@ -307,7 +328,7 @@ footer{
     }
 }
 
-@media (max-width: 460px){
+@media (max-width: 460px) {
     section{
         padding: 5vw;
     }
@@ -321,27 +342,27 @@ footer{
         width: 3.5em;
     }
 
-    #soft-skills-list{
+    #soft-skills-list {
         grid-template-columns: 1fr;
     }
 
-    #social-media{
+    #social-media {
         padding: 0 1rem;
     }
 
-    #social-media-content{
+    #social-media-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    #social-media-content img{
+    #social-media-content img {
         width: 3em;
         height: 3em;
     }
 
-    #social-media h2{
+    #social-media h2 {
         font-size: 200%;
     }
 
@@ -364,13 +385,13 @@ footer{
     }
 }
 
-@media(prefers-reduced-motion: reduce){
+@media(prefers-reduced-motion: reduce) {
     .hidden{
         transition: none;
     }
 }
 
-.wave-bottom-about-me{
+.wave-bottom-about-me {
     position: absolute;
     bottom: 0;
     left: 0;
