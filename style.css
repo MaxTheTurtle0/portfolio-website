@@ -42,7 +42,7 @@ a {
     color: #fff;
 }
 
-.last-p {
+.last-item {
     margin-bottom: 20vh;
 }
 
@@ -138,14 +138,6 @@ a {
     border-radius: 1em;
 }
 
-.introduction-flex-item {
-    z-index: 1;
-}
-
-#introduction-last-item {
-    padding-bottom: 5rem;
-}
-
 #introduction {
     background-color: #ff7f50;
     display: flex;
@@ -155,6 +147,10 @@ a {
     justify-content: center;
     text-align: left;
     font-size: 200%;
+}
+
+#introduction-content {
+    z-index: 1;
 }
 
 #social-media {
