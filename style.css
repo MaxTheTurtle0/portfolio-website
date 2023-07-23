@@ -102,16 +102,6 @@ a {
     filter: blur(0);
 }
 
-.project-icons {
-    display: none;
-    position: absolute;
-    bottom: 100%;
-}
-
-.project-icons-container a:hover + .project-icons {
-    display: block;
-}
-
 #projects {
     background-color: #3c31dd;
 }
@@ -306,7 +296,7 @@ footer {
         padding: 0;
         margin: 0;
         color: transparent;
-        background-image: url(/images/burger-menu.svg);
+        background-image: url(/images/burger-menu.webp);
         background-size: contain;
         background-repeat: no-repeat;
         background-color: transparent;
