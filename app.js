@@ -32,3 +32,23 @@ mobile_burger_menu.addEventListener("click", () => {
         mobile_burger_menu.setAttribute("aria-expanded", "false")
     }
 });
+
+
+/*const descriptionElement = document.querySelector("#short-description");
+const desctiption = "I am an aspiring software engineer."
+
+const typeWriter = (text, element, delay) => {
+    let i = 0;
+    const type = () => {
+        if (i < text.length)
+        {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, delay);
+        }
+    }
+    type();
+}
+
+typeWriter(desctiption, descriptionElement, 75);
+*/
