@@ -237,44 +237,15 @@ a {
     padding: 0;
 }
 
-#name {
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
-    max-width: fit-content;
-}
-
-#name {
-    animation: typewriter 0.8s steps(17) normal both,
-    blinkTextCursor 500ms steps(10) infinite normal;
-}
-
-@keyframes typewriter {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes blinkTextCursor {
-    from {
-        border-right-color: rgba(255, 255, 255, 0.75);
-    }
-
-    to {
-        border-right-color: transparent;
-    }
-}
-
 footer {
     background-color: #ffffff;
     color: #000000;
     text-align: center;
     padding: 0.5em;
+}
+
+#description {
+    color: #202731;
 }
 
 @media (max-width: 580px) {

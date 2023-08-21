@@ -1,11 +1,9 @@
-const observer = new  IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if (entry.isIntersecting)
-        {
+        if (entry.isIntersecting) {
             entry.target.classList.add("show");
         }
-        else
-        {
+        else {
             entry.target.classList.remove("show");
         }
     });
@@ -15,40 +13,44 @@ const observer = new  IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
-
 const navigationbar = document.querySelector(".navigationbar");
 const mobile_burger_menu = document.querySelector(".mobile-burger-menu");
 
 mobile_burger_menu.addEventListener("click", () => {
     const is_visible = navigationbar.getAttribute("data-visible");
-    if (is_visible === "false")
-    {
+    if (is_visible === "false") {
         navigationbar.setAttribute("data-visible", "true");
         mobile_burger_menu.setAttribute("aria-expanded", "true");
     }
-    else
-    {
+    else {
         navigationbar.setAttribute("data-visible", "false");
         mobile_burger_menu.setAttribute("aria-expanded", "false")
     }
 });
 
 
-/*const descriptionElement = document.querySelector("#short-description");
-const desctiption = "I am an aspiring software engineer."
+const description = ["software engineer.", "student.", "gamer.", "musician."];
+let descriptionElement = document.getElementById("description");
+
+let j = 0;
 
 const typeWriter = (text, element, delay) => {
     let i = 0;
+    element.innerHTML = "";
     const type = () => {
-        if (i < text.length)
-        {
+        if (i < text.length) {
             element.innerHTML += text.charAt(i);
             i++;
             setTimeout(type, delay);
         }
     }
+    j++;
+    if (j >= description.length) j = 0;
     type();
 }
 
-typeWriter(desctiption, descriptionElement, 75);
-*/
+typeWriter(description[j], descriptionElement, 75);
+
+setInterval(() => {
+    typeWriter(description[j], descriptionElement, 75);
+}, 4500);
