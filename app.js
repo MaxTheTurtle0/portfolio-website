@@ -21,10 +21,9 @@ mobile_burger_menu.addEventListener("click", () => {
     if (is_visible === "false") {
         navigationbar.setAttribute("data-visible", "true");
         mobile_burger_menu.setAttribute("aria-expanded", "true");
-    }
-    else {
+    } else {
         navigationbar.setAttribute("data-visible", "false");
-        mobile_burger_menu.setAttribute("aria-expanded", "false")
+        mobile_burger_menu.setAttribute("aria-expanded", "false");
     }
 });
 
