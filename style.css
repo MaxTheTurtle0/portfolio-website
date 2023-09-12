@@ -23,10 +23,14 @@ section {
 }
 
 nav {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+    position: -webkit-fixed;
+    position: fixed;
+    width: 100%;
     z-index: 3;
+}
+
+input[type="checkbox"] {
+    display: none;
 }
 
 h2 {
@@ -254,9 +258,7 @@ footer {
     }
 
     nav {
-        position: -webkit-fixed;
-        position: fixed;
-        top: 0;
+        width: fit-content;
         right: 0;
         inset: 0 0 0 30%;
         padding: min(30vh, 10rem) 3em;
@@ -265,12 +267,12 @@ footer {
         transition: transform 300ms ease-in-out;
     }
 
-    nav[data-visible="true"] {
-        transform: translateX(0%);
+    nav {
+        transform: translateX(100%);
     }
 
-    nav[data-visible="false"] {
-        transform: translateX(100%);
+    input[type="checkbox"]:checked ~ nav {
+        transform: translateX(0);
     }
 
     .navigation {
@@ -294,7 +296,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .mobile-burger-menu {
+    .burger-menu-label {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -309,25 +311,37 @@ footer {
         margin: 0.5rem;
     }
 
-    .mobile-burger-menu span, .mobile-burger-menu span::after, .mobile-burger-menu span::before {
+    .burger-menu-span, .burger-menu-span::after, .burger-menu-span::before {
         display: block;
         height: 2px;
         width: 1.5rem;
         background-color: #000;
-    }
-
-    .mobile-burger-menu span::after, .mobile-burger-menu span::before {
-        content: '';
-        position: absolute;
         transition: transform 300ms ease-in-out;
     }
 
-    .mobile-burger-menu span::after {
+    .burger-menu-span::after, .burger-menu-span::before {
+        content: '';
+        position: absolute;
+    }
+
+    .burger-menu-span::after {
         transform: translateY(0.5rem);
     }
 
-    .mobile-burger-menu span::before {
+    .burger-menu-span::before {
         transform: translateY(-0.5rem);
+    }
+
+    input[type="checkbox"]:checked ~ label span::after {
+        transform: translateY(0) rotate(45deg);
+    }
+
+    input[type="checkbox"]:checked ~ label span::before {
+        transform: translateY(0) rotate(-45deg);
+    }
+
+    input[type="checkbox"]:checked ~ label span {
+        background-color: transparent;
     }
 
     #contact-footer{
