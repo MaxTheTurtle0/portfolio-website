@@ -34,11 +34,11 @@ input[type="checkbox"] {
 }
 
 h2 {
-    font-size: 300%;
+    font-size: 3rem;
 }
 
 h3 {
-    font-size: 150%;
+    font-size: 2rem;
 }
 
 a {
@@ -118,22 +118,17 @@ a {
 
 #skills {
     background-color: #00caca;
-    padding: 0 10vw;
-}
-
-#skills-content {
-    display: grid;
-    grid-template-columns: 1fr;
+    padding: 0 10dvw;
 }
 
 #about-me-content {
     background-color: #1a212c;
     padding: 1rem;
-    border-radius: 1em;
+    border-radius: 1rem;
 }
 
 #introduction {
-    background-color: #ff7f50;
+    background-color: #ee6e3d;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -166,14 +161,14 @@ a {
 }
 
 #social-media-content img {
-    width: 4em;
-    height: 4em;
+    width: 4rem;
+    height: 4rem;
     transition: 250ms ease-in-out;
     transform: scale(1);
 }
 
 #social-media-content img:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
 #contact-footer {
@@ -191,13 +186,13 @@ a {
 }
 
 #contact-email img {
-    width: 2em;
-    height: 2em;
+    width: 2rem;
+    height: 2rem;
 }
 
-.soft-and-hard-skills {
+.hard-skills {
     background-color: #00c0c0;
-    border-radius: 1em;
+    border-radius: 1rem;
     padding: 1rem;
     margin: 1rem;
     text-align: center;
@@ -206,32 +201,27 @@ a {
 
 #hard-skills-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     list-style-type: none;
+    gap: 3rem;
     padding: 0;
+    align-items: space-evenly;
 }
 
 #hard-skills-list li img {
-    height: 4em;
-    width: 3.5em;
-    padding: 0.5em;
-    transition: transform 250ms ease-in-out;
+    height: 6rem;
+    width: 5.5rem;
+    padding: 0.5rem;
+    transition: transform 350ms ease-in-out;
     transform: scale(1);
 }
 
 #hard-skills-list img:hover {
-    transform: scale(1.4);
-}
-
-#soft-skills-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    list-style-type: none;
-    padding: 0.5em;
+    transform: scale(1.5) rotate(360deg);
 }
 
 #github-link {
-    background-image: url(/images/github-icon.svg);
+    background-image: url("img/github-icon.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -242,10 +232,19 @@ a {
 }
 
 footer {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #fff;
+    color: #000;
     text-align: center;
-    padding: 0.5em;
+    padding: 0.5rem;
+}
+
+footer a {
+    color: #000;
+}
+
+footer a:hover {
+    font-weight: bold;
+    text-decoration-line: underline;
 }
 
 #description {
@@ -258,6 +257,7 @@ footer {
     }
 
     nav {
+        width: -moz-fit-content;
         width: fit-content;
         right: 0;
         inset: 0 0 0 30%;
@@ -348,6 +348,16 @@ footer {
         flex-direction: column;
         gap: 0;
     }
+    
+    #hard-skills-list {
+        grid-template-columns: 1fr 1fr !important; 
+        gap: 1rem; 
+    }
+
+    #hard-skills-list li img {
+        height: 5rem !important;
+        width: 4.5rem !important;
+    }
 }
 
 @media (max-width: 460px) {
@@ -357,15 +367,6 @@ footer {
 
     nav {
         padding: min(30vh, 10rem) 1em;
-    }
-
-    #hard-skills-list li img {
-        height: 4em;
-        width: 3.5em;
-    }
-
-    #soft-skills-list {
-        grid-template-columns: 1fr;
     }
 
     #social-media {
@@ -380,8 +381,8 @@ footer {
     }
 
     #social-media-content img {
-        width: 3em;
-        height: 3em;
+        width: 3rem;
+        height: 3rem;
     }
 
     #social-media h2 {
@@ -407,9 +408,26 @@ footer {
     }
 }
 
-@media(prefers-reduced-motion: reduce) {
-    .hidden{
+@media (prefers-reduced-motion: reduce) {
+    .hidden {
         transition: none;
+    }
+
+    #hard-skills-list img:hover {
+        transform: scale(1.5);
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .hard-skills li img {
+        height: 5rem;
+        width: 4.5rem;
+    }
+
+    #hard-skills-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.25rem; 
     }
 }
 
