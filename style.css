@@ -46,15 +46,11 @@ a {
     color: #fff;
 }
 
-.last-item {
-    margin-bottom: 20vh;
-}
-
 .mobile-burger-menu {
     display: none;
 }
 
-.navigation {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -86,15 +82,6 @@ a {
     width: 100%;
 }
 
-.nav-flex-item:last-child a:after {
-    display: none;
-}
-
-.nav-flex-item:last-child {
-    float: right;
-}
-
-
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -111,7 +98,6 @@ a {
 }
 
 #my-projects {
-    background-color: #3c21cd;
     padding: 1rem;
     border-radius: 1em;
 }
@@ -119,12 +105,6 @@ a {
 #skills {
     background-color: #00caca;
     padding: 0 10dvw;
-}
-
-#about-me-content {
-    background-color: #1a212c;
-    padding: 1rem;
-    border-radius: 1rem;
 }
 
 #introduction {
@@ -142,56 +122,36 @@ a {
     z-index: 1;
 }
 
-#social-media {
-    background-color: #FFC0CB;
-}
-
-#social-media-content {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 1rem;
+.links {
+    display: flex;
+    gap: 2rem;
     padding: 1rem;
     align-items: center;
-    background-color: #FFB0BB;
-    border-radius: 1em;
+    justify-content: center;
+    border-radius: 1rem;
 }
 
-#social-media-content p {
-    margin: 0;
+.links svg {
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
-#social-media-content img {
-    width: 4rem;
-    height: 4rem;
+.links span {
+    font-size: 1.5rem;
+}
+
+.links a:hover {
+    font-weight: bold;
+    text-decoration-line: underline;
+    transform: scale(1.2);
+}
+
+.links a {
     transition: 250ms ease-in-out;
     transform: scale(1);
 }
 
-#social-media-content img:hover {
-    transform: scale(1.3);
-}
-
-#contact-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-#contact-email {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-#contact-email img {
-    width: 2rem;
-    height: 2rem;
-}
-
 .hard-skills {
-    background-color: #00c0c0;
     border-radius: 1rem;
     padding: 1rem;
     margin: 1rem;
@@ -220,17 +180,6 @@ a {
     transform: scale(1.5) rotate(360deg);
 }
 
-#github-link {
-    background-image: url("img/github-icon.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    border: 0;
-    width: 3rem;
-    aspect-ratio: 1;
-    padding: 0;
-}
-
 footer {
     background-color: #fff;
     color: #000;
@@ -251,9 +200,15 @@ footer a:hover {
     color: #202731;
 }
 
+.social-media-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 @media (max-width: 580px) {
     section {
-        padding: 0 15vw;
+        padding: 0 15dvw;
     }
 
     nav {
@@ -261,7 +216,7 @@ footer a:hover {
         width: fit-content;
         right: 0;
         inset: 0 0 0 30%;
-        padding: min(30vh, 10rem) 3em;
+        padding: min(30dvh, 10rem) 3rem;
         background-color: #ffffff;
         transform: translateX(100%);
         transition: transform 300ms ease-in-out;
@@ -275,9 +230,13 @@ footer a:hover {
         transform: translateX(0);
     }
 
-    .navigation {
+    nav ul {
         display: flex;
         flex-wrap:  wrap;
+    }
+
+    .links {
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 
     .nav-flex-item {
@@ -286,10 +245,6 @@ footer a:hover {
 
     .nav-flex-item:last-child {
         text-align: center;
-    }
-
-    #github-link {
-        display: inline-block;
     }
 
     #hard-skills-list {
@@ -343,12 +298,7 @@ footer a:hover {
     input[type="checkbox"]:checked ~ label span {
         background-color: transparent;
     }
-
-    #contact-footer{
-        flex-direction: column;
-        gap: 0;
-    }
-    
+ 
     #hard-skills-list {
         grid-template-columns: 1fr 1fr !important; 
         gap: 1rem; 
@@ -362,49 +312,22 @@ footer a:hover {
 
 @media (max-width: 460px) {
     section {
-        padding: 5vw;
+        padding: 5dvw;
     }
+}
 
-    nav {
-        padding: min(30vh, 10rem) 1em;
+@media (max-width: 425px) {
+    .links span {
+        display: none; 
     }
-
-    #social-media {
-        padding: 0 1rem;
+     
+    .links svg {
+        height: 4rem;
+        width: 4rem;
     }
-
-    #social-media-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #social-media-content img {
-        width: 3rem;
-        height: 3rem;
-    }
-
-    #social-media h2 {
-        font-size: 200%;
-    }
-
-    .wave-bottom-about-me svg {
-        height: 200px !important;
-    }
-
-    .wave-bottom-projects svg {
-        width: calc(180% + 1.3px) !important;
-        height: 75px;
-    }
-
-    .wave-bottom-introduction svg {
-        height: 75px !important;
-    }
-
-
-    .curve-bottom-skills svg {
-        height: 75px !important;
+    
+    .links {
+        grid-template-columns: repeat(3, 1fr) !important;
     }
 }
 
@@ -429,89 +352,10 @@ footer a:hover {
         grid-template-columns: repeat(3, 1fr);
         gap: 2.25rem; 
     }
-}
 
-.wave-bottom-about-me {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    z-index: -1;
-}
-
-.wave-bottom-about-me svg {
-    position: relative;
-    display: block;
-    width: calc(144% + 1.3px);
-    height: 400px;
-}
-
-.wave-bottom-about-me .shape-fill {
-    fill: #3c31dd;
-}
-
-.wave-bottom-projects {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.wave-bottom-projects svg {
-    position: relative;
-    display: block;
-    width: calc(180% + 1.3px);
-    height: 150px;
-}
-
-.wave-bottom-projects .shape-fill {
-    fill: #00caca;
-}
-
-.wave-bottom-introduction {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.wave-bottom-introduction svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-}
-
-.wave-bottom-introduction .shape-fill {
-    fill: #202731;
-}
-
-.curve-bottom-skills {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.curve-bottom-skills svg {
-    position: relative;
-    display: block;
-    width: calc(108% + 1.3px);
-    height: 150px;
-}
-
-.curve-bottom-skills .shape-fill {
-    fill: #FFC0CB;
+    .links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center; 
+    }
 }

@@ -20,10 +20,10 @@ let j = 0;
 
 const typeWriter = (text, element, delay) => {
     let i = 0;
-    element.innerHTML = "";
+    element.textContent = "";
     const type = () => {
         if (i < text.length) {
-            element.innerHTML += text.charAt(i);
+            element.textContent += text.charAt(i);
             i++;
             setTimeout(type, delay);
         }
@@ -31,7 +31,7 @@ const typeWriter = (text, element, delay) => {
     j++;
     if (j >= description.length) j = 0;
     type();
-}
+};
 
 typeWriter(description[j], descriptionElement, 75);
 
