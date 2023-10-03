@@ -1,12 +1,16 @@
 @import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap);
 
-html {
+:root {
     scroll-behavior: smooth;
     font-family: 'Fira Code', monospace;
+    --default-bg-color: #202731;
+    --intro-bg-color: #ee6e3d;
+    --projects-bg-color: #3c31dd;
+    --skills-bg-color: #00caca;
 }
 
 body {
-    background-color: #202731;
+    background-color: var(--default-bg-color);
     color: #ffffff;
     padding: 0;
     margin: 0;
@@ -31,6 +35,11 @@ nav {
 
 input[type="checkbox"] {
     display: none;
+}
+
+::selection {
+    background-color: darkslategray;
+    color: #fff;
 }
 
 h2 {
@@ -94,7 +103,7 @@ nav ul {
 }
 
 #projects {
-    background-color: #3c31dd;
+    background-color: var(--projects-bg-color);
 }
 
 #my-projects {
@@ -102,13 +111,29 @@ nav ul {
     border-radius: 1em;
 }
 
+.content-wrapper div, .content-wrapper li { 
+    transition: all 250ms ease-in-out;
+}
+
+.content-wrapper:hover div, .content-wrapper:hover li {
+    opacity: 0.5;
+    filter: blur(2px);
+}
+
+
+.content-wrapper div:hover, .content-wrapper li:hover {
+    opacity: 1;
+    filter: blur(0);
+}
+
+
 #skills {
-    background-color: #00caca;
+    background-color: var(--skills-bg-color);
     padding: 0 10dvw;
 }
 
 #introduction {
-    background-color: #ee6e3d;
+    background-color: var(--intro-bg-color);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -197,7 +222,7 @@ footer a:hover {
 }
 
 #description {
-    color: #202731;
+    color: var(--default-bg-color);
 }
 
 .social-media-link {
@@ -358,4 +383,89 @@ footer a:hover {
         grid-template-columns: repeat(3, 1fr);
         justify-items: center; 
     }
+}
+
+.custom-shape-divider-bottom-1696312862 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1696312862 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1696312862 .shape-fill {
+    fill: var(--skills-bg-color);
+}
+
+.custom-shape-divider-bottom-1696313366 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1696313366 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1696313366 .shape-fill {
+    fill: var(--default-bg-color);
+}
+
+.custom-shape-divider-bottom-1696313976 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1696313976 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1696313976 .shape-fill {
+    fill: var(--projects-bg-color);
+}
+
+.custom-shape-divider-bottom-1696313608 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1696313608 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1696313608 .shape-fill {
+    fill: #202731;
 }
