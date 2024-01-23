@@ -1,29 +1,21 @@
-@import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
     scroll-behavior: smooth;
-    font-family: 'Fira Code', monospace;
-    --default-bg-color: #202731;
-    --intro-bg-color: #ee6e3d;
-    --projects-bg-color: #3c31dd;
-    --skills-bg-color: #00caca;
 }
 
 body {
-    background-color: var(--default-bg-color);
     color: #ffffff;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    @apply bg-primary;
 }
 
 section {
-    position: relative;
-    display: grid;
-    place-items: center;
-    align-content: center;
-    min-height: 100dvh;
-    padding: 0 20dvw;
+    @apply min-h-screen flex flex-col justify-center items-center px-4;
 }
 
 nav {
@@ -42,14 +34,6 @@ input[type="checkbox"] {
     color: #fff;
 }
 
-h2 {
-    font-size: 3rem;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
 a {
     text-decoration: none;
     color: #fff;
@@ -57,14 +41,6 @@ a {
 
 .mobile-burger-menu {
     display: none;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ffffff;
 }
 
 .nav-flex-item {
@@ -91,7 +67,7 @@ nav ul {
     width: 100%;
 }
 
-.hidden {
+.hidden-transition {
     opacity: 0;
     filter: blur(5px);
     transition: all 1s;
@@ -100,10 +76,6 @@ nav ul {
 .show {
     opacity: 1;
     filter: blur(0);
-}
-
-#projects {
-    background-color: var(--projects-bg-color);
 }
 
 #my-projects {
@@ -126,26 +98,6 @@ nav ul {
     filter: blur(0);
 }
 
-
-#skills {
-    background-color: var(--skills-bg-color);
-    padding: 0 10dvw;
-}
-
-#introduction {
-    background-color: var(--intro-bg-color);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: left;
-    font-size: 200%;
-}
-
-#introduction-content {
-    z-index: 1;
-}
 
 .links {
     display: flex;
@@ -221,10 +173,6 @@ footer a:hover {
     text-decoration-line: underline;
 }
 
-#description {
-    color: var(--default-bg-color);
-}
-
 .social-media-link {
     display: flex;
     align-items: center;
@@ -232,10 +180,6 @@ footer a:hover {
 }
 
 @media (max-width: 580px) {
-    section {
-        padding: 0 15dvw;
-    }
-
     nav {
         width: -moz-fit-content;
         width: fit-content;
@@ -245,10 +189,6 @@ footer a:hover {
         background-color: #ffffff;
         transform: translateX(100%);
         transition: transform 300ms ease-in-out;
-    }
-
-    nav {
-        transform: translateX(100%);
     }
 
     input[type="checkbox"]:checked ~ nav {
@@ -266,14 +206,6 @@ footer a:hover {
 
     .nav-flex-item {
         flex-basis: 100%;
-    }
-
-    .nav-flex-item:last-child {
-        text-align: center;
-    }
-
-    #hard-skills-list {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .burger-menu-label {
@@ -335,17 +267,7 @@ footer a:hover {
     }
 }
 
-@media (max-width: 460px) {
-    section {
-        padding: 5dvw;
-    }
-}
-
 @media (max-width: 425px) {
-    h1 {
-        font-size: 2.25rem;
-    } 
-
     .links span {
         display: none; 
     }
@@ -406,10 +328,6 @@ footer a:hover {
     height: 150px;
 }
 
-.custom-shape-divider-bottom-1696312862 .shape-fill {
-    fill: var(--skills-bg-color);
-}
-
 .custom-shape-divider-bottom-1696313366 {
     position: absolute;
     bottom: 0;
@@ -426,10 +344,6 @@ footer a:hover {
     width: calc(100% + 1.3px);
     height: 150px;
     transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1696313366 .shape-fill {
-    fill: var(--default-bg-color);
 }
 
 .custom-shape-divider-bottom-1696313976 {
@@ -450,10 +364,6 @@ footer a:hover {
     transform: rotateY(180deg);
 }
 
-.custom-shape-divider-bottom-1696313976 .shape-fill {
-    fill: var(--projects-bg-color);
-}
-
 .custom-shape-divider-bottom-1696313608 {
     position: absolute;
     bottom: 0;
@@ -468,8 +378,4 @@ footer a:hover {
     display: block;
     width: calc(100% + 1.3px);
     height: 150px;
-}
-
-.custom-shape-divider-bottom-1696313608 .shape-fill {
-    fill: #202731;
 }

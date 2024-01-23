@@ -2,7 +2,7 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => entry.target.classList.toggle("show", entry.isIntersecting));
 });
 
-const hiddenElements = document.querySelectorAll(".hidden");
+const hiddenElements = document.querySelectorAll(".hidden-transition");
 hiddenElements.forEach((element) => observer.observe(element));
 
 const description = ["software engineer.", "student.", "gamer.", "musician."];

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Andrei Antoenscu's portfolio">
     <title>portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/logo.webp">
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" href="/img/logo.webp">
     <script defer src="app.js"></script>
 </head>
 <body> 
@@ -23,122 +23,125 @@
                 <li class="nav-flex-item"><a href="#thoughts">thoughts()</a></li> 
             </ul>
         </nav> 
-    </header>
-    <section id="introduction">
-        <h1>Hi, I am MaxTheTurtle0,<br/> a <span id="description"></span></h1> 
-    </section>
-    <div style="height: 150px; position: relative; background-color: #ee6e3d;">
-        <div class="custom-shape-divider-bottom-1696313608">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
-            </svg>
+    </header> 
+    <main class="">
+        <section id="introduction" class="bg-intro">
+            <div class="flex flex-col">
+                <h1 class="text-3xl font-bold">Hi, I am MaxTheTurtle0, </h1>
+                <span id="description" class="text-primary text-3xl font-bold"></span> 
+            </div> 
+        </section>
+        <div class="h-[150px] relative bg-intro">
+            <div class="custom-shape-divider-bottom-1696313608">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="fill-primary"></path>
+                </svg>
+            </div>
         </div>
-    </div>
-    <main>
         <section id="about-me"> 
-            <h2 class="hidden">about_me()</h2>
+            <h2 class="hidden-transition">about_me()</h2>
             <div id="about-me-content">
-                <p class="hidden">
-                    I am a student living in Germany. My passion is programming, I also took CS50x, which helped me expand my knowledge and skills in computer science. I have a fair amount of experience with Python and some Python UI frameworks like Tkinter and Kivy even tough I really don't like them. I also have experience with HTML, CSS and JavaScript. Having said that I also have a basic understanding of C, due to CS50x but currently I focus more on web development, hence I am using SvelteKit a lot.
+                <p class="hidden-transition">
+                I am a student living in Germany. My passion is programming, I also took CS50x, which helped me expand my knowledge and skills in computer science. I have a fair amount of experience with Python and some Python UI frameworks like Tkinter and Kivy even tough I really don't like them. I also have experience with HTML, CSS and JavaScript. Having said that I also have a basic understanding of C, due to CS50x but currently I focus more on web development, hence I am using SvelteKit a lot.
                 </p>
             </div>
         </section>
-        <div style="height: 150px; position: relative;">
+        <div class="h-[150px] relative bg-primary">
             <div class="custom-shape-divider-bottom-1696313976">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="fill-projects"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="fill-projects"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="fill-projects"></path>
                 </svg>
             </div> 
         </div>
-        <section id="projects">  
-            <h2 class="hidden">projects()</h2>
+        <section id="projects" class="bg-projects"> 
+            <h2 class="hidden-transition">projects()</h2>
             <div id="my-projects" class="content-wrapper"> 
                 <div>
-                    <h3 class="hidden">
+                    <h3 class="hidden-transition">
                         <a href="https://guessthequote.vercel.app/">GUESS THE QUOTE</a>
                     </h3>
-                    <p class="hidden">
+                    <p class="hidden-transition">
                         I made a web app using SvelteKit and firebase. It is a game where you have to guess the author of a quote. It has user authentication, a browse page where you can search for publich stacks of quotes and a home page where you can create and play your own stacks of quotes.
                 </div>
                 <div>
-                    <h3 class="hidden">
+                    <h3 class="hidden-transition">
                         <a href="https://github.com/MaxTheTurtle0/numberType">NUMBERTYPE</a>
                     </h3>
-                    <p class="hidden">
+                    <p class="hidden-transition">
                         This is my final project for CS50x. It is a website with which a user can memorize their contacts' phone numbers and practice typing numbers on their keyboard. I made it using SvelteKit, Auth.js and Prisma.
                     </p>
                 </div>
                 <div>
-                    <h3 class="hidden">
+                    <h3 class="hidden-transition">
                         <a href="https://github.com/MaxTheTurtle0/unit-converter">UNIT CONVERTER</a>
                     </h3>
-                    <p class="hidden">
+                    <p class="hidden-transition">
                         My first project, arguably my least impressive, was a basic unit converter created using Python and Customtkinter. It facilitates conversion among different units of length, weight, temperature, volume, and pressure. Additionally, it features a dark mode.
                     </p>
                 </div>
                 <div>
-                    <h3 class="hidden">
+                    <h3 class="hidden-transition">
                         <a href="https://github.com/MaxTheTurtle0/statify">STATIFY</a>
                     </h3>
-                    <p class="hidden">
+                    <p class="hidden-transition">
                         Statify is a website where users can view their spotify statistics. It is made using SvelteKit and the spotify API. Users can login with their spotify account and view their top artists, tracks and genres. It uses Tailwind CSS for styling and utilizes Chart.js to present the genres data in a visually appealing manner.</p>
                 </div>
                 <div>
-                    <h3 class="hidden">
+                    <h3 class="hidden-transition">
                         <a href="https://github.com/MaxTheTurtle0/advent-of-code">ADVENT OF CODE REPO</a>
                     </h3>
-                    <p class="hidden">
+                    <p class="hidden-transition">
                         This is a repo where I store my solutions for advent of code. I am currently doing the 2022 challenges. By solving these challenges I aim to improve my skills in Python and Rust.
                     </p>
                 </div>
             </div>
         </section>
-        <div style="height: 150px; position: relative; background-color: #3c31dd">
+        <div class="h-[150px] relative bg-projects">
             <div class="custom-shape-divider-bottom-1696312862">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-skills"></path>
                 </svg>
             </div>
         </div>
-        <section id="skills"> 
-            <h2 class="hidden">skills()</h2>
+        <section id="skills" class="bg-skills">
+            <h2 class="hidden-transition">skills()</h2>
             <div id="skills-content">
-                <div class="hard-skills hidden">
+                <div class="hard-skills hidden-transition">
                     <h3>HARD SKILLS</h3>
                     <ul id="hard-skills-list" class="content-wrapper">
-                        <li class="hidden"><img src="img/python-icon.svg" alt="Python Logo SVG"></li>
-                        <li class="hidden"><img src="img/javascript-icon.svg" alt="Javascript Logo SVG"></li>
-                        <li class="hidden"><img src="img/c-icon.svg" alt="C Logo SVG"></li>
-                        <li class="hidden"><img src="img/HTML5-icon.svg" alt="HTML5 Logo SVG"></li>
-                        <li class="hidden"><img src="img/CSS3-icon.svg" alt="CSS3 Logo SVG"></li>
-                        <li class="hidden"><img src="img/sqlite-icon.svg" alt="SQL Logo SVG"></li>
+                        <li class="hidden-transition"><img src="img/python-icon.svg" alt="Python Logo SVG"></li>
+                        <li class="hidden-transition"><img src="img/javascript-icon.svg" alt="Javascript Logo SVG"></li>
+                        <li class="hidden-transition"><img src="img/c-icon.svg" alt="C Logo SVG"></li>
+                        <li class="hidden-transition"><img src="img/HTML5-icon.svg" alt="HTML5 Logo SVG"></li>
+                        <li class="hidden-transition"><img src="img/CSS3-icon.svg" alt="CSS3 Logo SVG"></li>
+                        <li class="hidden-transition"><img src="img/sqlite-icon.svg" alt="SQL Logo SVG"></li>
                     </ul>
                 </div>
             </div>
         </section>
-        <div style="height: 150px; position: relative; background-color: #00caca">
+        <div class="h-[150px] relative bg-skills">
             <div class="custom-shape-divider-bottom-1696313366">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="fill-primary"></path>
                 </svg>
             </div> 
         </div>
         <section id="thoughts">
-            <h2 class="hidden">thoughts()</h2>
+            <h2 class="hidden-transition">thoughts()</h2>
             <div class="content-wrapper"> 
                 <div>
-                    <h3 class="hidden">Will AI replace programmers?</h2>
-                    <p class="hidden">No, I don't think so, but I also believe that AI will become a mandatory tool, enabling programmers to concentrate on the interesting and complex aspects of their job.</p>
+                    <h3 class="hidden-transition">Will AI replace programmers?</h2>
+                    <p class="hidden-transition">No, I don't think so, but I also believe that AI will become a mandatory tool, enabling programmers to concentrate on the interesting and complex aspects of their job.</p>
                 </div>
                 <div>
-                    <h3 class="hidden">A Programmer can't do everything</h2>
-                    <p class="hidden">I feel like many people who don't program have this impression that every programmer can hack into whatever they want, create a complex multiplayer game by themselves in a week, or develop a Twitter replacement in a day. It's important to keep in mind that there's a reason why there are thousands of people working at these big tech companies. A programmer isn't a 100-person army.</p>
+                    <h3 class="hidden-transition">A Programmer can't do everything</h2>
+                    <p class="hidden-transition">I feel like many people who don't program have this impression that every programmer can hack into whatever they want, create a complex multiplayer game by themselves in a week, or develop a Twitter replacement in a day. It's important to keep in mind that there's a reason why there are thousands of people working at these big tech companies. A programmer isn't a 100-person army.</p>
                 </div>
                 <div>
-                    <h3 class="hidden">Why you should give Neovim/Vim a try.</h2>
-                    <p class="hidden">Before Neovim, I, like many, heavily relied on VSCode shortcuts for efficiency. However, finding VSCode limiting, I tried a Vim extension, and the speed boost was impressive. During a slow laptop vacation, I switched to Neovim and never looked back. Returning home, I made Neovim my default for its superior experience and increased productivity. I believe everyone should give Neovim or Vim a try; it can genuinely enhance productivity and is a fun tool to use as well.</p>
+                    <h3 class="hidden-transition">Why you should give Neovim/Vim a try.</h2>
+                    <p class="hidden-transition">Before Neovim, I, like many, heavily relied on VSCode shortcuts for efficiency. However, finding VSCode limiting, I tried a Vim extension, and the speed boost was impressive. During a slow laptop vacation, I switched to Neovim and never looked back. Returning home, I made Neovim my default for its superior experience and increased productivity. I believe everyone should give Neovim or Vim a try; it can genuinely enhance productivity and is a fun tool to use as well.</p>
                 </div>
             </div>
         </section>
