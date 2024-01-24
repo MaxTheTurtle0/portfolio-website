@@ -1,10 +1,8 @@
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => entry.target.classList.toggle("show", entry.isIntersecting));
-});
+// fade in elements when they are in view
+const observer = new IntersectionObserver((entries) => entries.forEach((entry) => entry.target.classList.toggle("show", entry.isIntersecting)));
+document.querySelectorAll(".hidden-transition").forEach((element) => observer.observe(element));
 
-const hiddenElements = document.querySelectorAll(".hidden-transition");
-hiddenElements.forEach((element) => observer.observe(element));
-
+// Typewriter effect
 const description = ["software engineer.", "student.", "gamer.", "musician."];
 const descriptionElement = document.getElementById("description");
 

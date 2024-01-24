@@ -1,183 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Andrei Antoenscu's portfolio">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="output.css">
-    <link rel="icon" href="/img/logo.webp">
-    <script defer src="app.js"></script>
-</head>
-<body> 
-    <header>
-        <input type="checkbox" title="burger-menu" id="burger-menu">     
-        <label for="burger-menu" class="burger-menu-label">
-            <span class="burger-menu-span"></span>
-        </label> 
-        <nav>
-            <ul>
-                <li class="nav-flex-item"><a href="#about-me">about_me()</a></li>
-                <li class="nav-flex-item"><a href="#projects">projects()</a></li>
-                <li class="nav-flex-item"><a href="#skills">skills()</a></li>
-                <li class="nav-flex-item"><a href="#thoughts">thoughts()</a></li> 
-            </ul>
-        </nav> 
-    </header> 
-    <main class="">
-        <section id="introduction" class="bg-intro">
-            <div class="flex flex-col">
-                <h1 class="text-3xl font-bold">Hi, I am MaxTheTurtle0, </h1>
-                <span id="description" class="text-primary text-3xl font-bold"></span> 
-            </div> 
-        </section>
-        <div class="h-[150px] relative bg-intro">
-            <div class="custom-shape-divider-bottom-1696313608">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="fill-primary"></path>
-                </svg>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Andrei Antoenscu's portfolio">
+        <title>portfolio</title>
+        <link rel="stylesheet" href="output.css">
+        <link rel="icon" href="/img/logo.webp">
+        <script defer src="app.js"></script>
+    </head>
+    <body> 
+        <header>
+            <input type="checkbox" title="burger-menu" id="burger-menu" class="hidden">     
+            <label for="burger-menu" class="burger-menu-label xs:hidden">
+                <span class="burger-menu-span"></span>
+            </label> 
+            <nav class="bg-white right-0 inset-y-0 xs:inset-0 w-1/2 xs:w-full translate-x-full xs:right-auto xs:h-16 xs:translate-x-0 z-10 flex items-center fixed origin-top top-0 ease-in-out duration-300">
+                <ul class="flex flex-col xs:flex-row items-start xs:items-center h-fit xs:h-full gap-6 pl-6">
+                    <li class="nav-flex-item"><a href="#about-me">about_me()</a></li>
+                    <li class="nav-flex-item"><a href="#projects">projects()</a></li>
+                    <li class="nav-flex-item"><a href="#skills">skills()</a></li>
+                    <li class="nav-flex-item"><a href="#thoughts">thoughts()</a></li>
+                </ul>
+            </nav> 
+        </header> 
+        <main class="min-h-[calc(100dvh-4rem)] xs:mt-16">
+            <section id="introduction" class="bg-intro relative">
+                <div class="flex flex-col xs:mb-16">
+                    <h1 class="text-3xl font-bold sm:text-5xl xl:text-7xl">Hi, I am <i>MaxTheTurtle0</i>, </h1>
+                    <span id="description" class="text-primary text-3xl font-extrabold sm:text-5xl xl:text-7xl"></span> 
+                </div> 
+                <a class="indicator absolute bottom-20 xs:bottom-36" href="/#about-me">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </section>
+            <div class="h-[150px] relative bg-intro">
+                <div class="custom-shape-divider-bottom-1696313608">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="fill-primary"></path>
+                    </svg>
+                </div>
             </div>
-        </div>
-        <section id="about-me"> 
-            <h2 class="hidden-transition">about_me()</h2>
-            <div id="about-me-content">
-                <p class="hidden-transition">
-                I am a student living in Germany. My passion is programming, I also took CS50x, which helped me expand my knowledge and skills in computer science. I have a fair amount of experience with Python and some Python UI frameworks like Tkinter and Kivy even tough I really don't like them. I also have experience with HTML, CSS and JavaScript. Having said that I also have a basic understanding of C, due to CS50x but currently I focus more on web development, hence I am using SvelteKit a lot.
-                </p>
+            <section id="about-me" class="gap-6 lg:gap-8"> 
+                <p class="hidden-transition text-4xl lg:text-6xl font-bold">about_me()</p>
+                <div id="about-me-content" class="max-w-5xl">
+                    <p class="hidden-transition lg:text-xl">
+                    I am a student living in Germany. My passion is programming, I also took CS50x, which helped me expand my knowledge and skills in computer science. I have a fair amount of experience with Python and some Python UI frameworks like Tkinter and Kivy even tough I really don't like them. I also have experience with HTML, CSS and JavaScript. Having said that I also have a basic understanding of C, due to CS50x but currently I focus more on web development, hence I am using SvelteKit a lot.
+                    </p>
+                </div>
+            </section>
+            <div class="h-[150px] relative bg-primary">
+                <div class="custom-shape-divider-bottom-1696313976">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="fill-projects"></path>
+                        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="fill-projects"></path>
+                        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="fill-projects"></path>
+                    </svg>
+                </div> 
             </div>
-        </section>
-        <div class="h-[150px] relative bg-primary">
-            <div class="custom-shape-divider-bottom-1696313976">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="fill-projects"></path>
-                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="fill-projects"></path>
-                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="fill-projects"></path>
-                </svg>
-            </div> 
-        </div>
-        <section id="projects" class="bg-projects"> 
-            <h2 class="hidden-transition">projects()</h2>
-            <div id="my-projects" class="content-wrapper"> 
-                <div>
-                    <h3 class="hidden-transition">
-                        <a href="https://guessthequote.vercel.app/">GUESS THE QUOTE</a>
-                    </h3>
-                    <p class="hidden-transition">
+            <section id="projects" class="bg-projects gap-6 lg:gap-8"> 
+                <p class="hidden-transition text-4xl lg:text-6xl font-bold">projects()</p>
+                <div id="my-projects" class="max-w-5xl flex flex-col gap-4 lg:gap-6"> 
+                    <div class="flex flex-col gap-2 lg:gap-4">
+                        <a class="hidden-transition text-xl lg:text-3xl font-bold underline hover:no-underline" href="https://guessthequote.vercel.app/">GUESS THE QUOTE</a>
+                        <p class="hidden-transition lg:text-xl">
                         I made a web app using SvelteKit and firebase. It is a game where you have to guess the author of a quote. It has user authentication, a browse page where you can search for publich stacks of quotes and a home page where you can create and play your own stacks of quotes.
-                </div>
-                <div>
-                    <h3 class="hidden-transition">
-                        <a href="https://github.com/MaxTheTurtle0/numberType">NUMBERTYPE</a>
-                    </h3>
-                    <p class="hidden-transition">
+                    </div>
+                    <div class="flex flex-col gap-2 lg:gap-4">
+                        <a class="hidden-transition text-xl lg:text-3xl font-bold underline hover:no-underline" href="https://github.com/MaxTheTurtle0/numberType">NUMBERTYPE</a>
+                        <p class="hidden-transition lg:text-xl">
                         This is my final project for CS50x. It is a website with which a user can memorize their contacts' phone numbers and practice typing numbers on their keyboard. I made it using SvelteKit, Auth.js and Prisma.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="hidden-transition">
-                        <a href="https://github.com/MaxTheTurtle0/unit-converter">UNIT CONVERTER</a>
-                    </h3>
-                    <p class="hidden-transition">
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-2 lg:gap-4">
+                        <a class="hidden-transition text-xl lg:text-3xl font-bold underline hover:no-underline" href="https://github.com/MaxTheTurtle0/unit-converter">UNIT CONVERTER</a>
+                        <p class="hidden-transition lg:text-xl">
                         My first project, arguably my least impressive, was a basic unit converter created using Python and Customtkinter. It facilitates conversion among different units of length, weight, temperature, volume, and pressure. Additionally, it features a dark mode.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="hidden-transition">
-                        <a href="https://github.com/MaxTheTurtle0/statify">STATIFY</a>
-                    </h3>
-                    <p class="hidden-transition">
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-2 lg:gap-4">
+                        <a class="hidden-transition text-xl lg:text-3xl font-bold underline hover:no-underline" href="https://github.com/MaxTheTurtle0/statify">STATIFY</a>
+                        <p class="hidden-transition lg:text-xl">
                         Statify is a website where users can view their spotify statistics. It is made using SvelteKit and the spotify API. Users can login with their spotify account and view their top artists, tracks and genres. It uses Tailwind CSS for styling and utilizes Chart.js to present the genres data in a visually appealing manner.</p>
-                </div>
-                <div>
-                    <h3 class="hidden-transition">
-                        <a href="https://github.com/MaxTheTurtle0/advent-of-code">ADVENT OF CODE REPO</a>
-                    </h3>
-                    <p class="hidden-transition">
+                    </div>
+                    <div class="flex flex-col gap-2 lg:gap-4">
+                        <a class="hidden-transition text-xl lg:text-3xl font-bold underline hover:no-underline" href="https://github.com/MaxTheTurtle0/advent-of-code">ADVENT OF CODE REPO</a>
+                        <p class="hidden-transition lg:text-xl">
                         This is a repo where I store my solutions for advent of code. I am currently doing the 2022 challenges. By solving these challenges I aim to improve my skills in Python and Rust.
-                    </p>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div class="h-[150px] relative bg-projects">
+                <div class="custom-shape-divider-bottom-1696312862">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-skills"></path>
+                    </svg>
                 </div>
             </div>
-        </section>
-        <div class="h-[150px] relative bg-projects">
-            <div class="custom-shape-divider-bottom-1696312862">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-skills"></path>
-                </svg>
+            <section id="skills" class="bg-skills">
+                <p class="hidden-transition">skills()</p>
+                <div id="skills-content" class="max-w-5xl">
+                    <div class="hard-skills hidden-transition">
+                        <h3>HARD SKILLS</h3>
+                        <ul id="hard-skills-list" class="content-hover-blur">
+                            <li class="hidden-transition"><img src="img/python-icon.svg" alt="Python Logo SVG"></li>
+                            <li class="hidden-transition"><img src="img/javascript-icon.svg" alt="Javascript Logo SVG"></li>
+                            <li class="hidden-transition"><img src="img/c-icon.svg" alt="C Logo SVG"></li>
+                            <li class="hidden-transition"><img src="img/HTML5-icon.svg" alt="HTML5 Logo SVG"></li>
+                            <li class="hidden-transition"><img src="img/CSS3-icon.svg" alt="CSS3 Logo SVG"></li>
+                            <li class="hidden-transition"><img src="img/sqlite-icon.svg" alt="SQL Logo SVG"></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="h-[150px] relative bg-skills">
+                <div class="custom-shape-divider-bottom-1696313366">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="fill-primary"></path>
+                    </svg>
+                </div> 
             </div>
-        </div>
-        <section id="skills" class="bg-skills">
-            <h2 class="hidden-transition">skills()</h2>
-            <div id="skills-content">
-                <div class="hard-skills hidden-transition">
-                    <h3>HARD SKILLS</h3>
-                    <ul id="hard-skills-list" class="content-wrapper">
-                        <li class="hidden-transition"><img src="img/python-icon.svg" alt="Python Logo SVG"></li>
-                        <li class="hidden-transition"><img src="img/javascript-icon.svg" alt="Javascript Logo SVG"></li>
-                        <li class="hidden-transition"><img src="img/c-icon.svg" alt="C Logo SVG"></li>
-                        <li class="hidden-transition"><img src="img/HTML5-icon.svg" alt="HTML5 Logo SVG"></li>
-                        <li class="hidden-transition"><img src="img/CSS3-icon.svg" alt="CSS3 Logo SVG"></li>
-                        <li class="hidden-transition"><img src="img/sqlite-icon.svg" alt="SQL Logo SVG"></li>
-                    </ul>
+            <section id="thoughts" class="gap-6 lg:gap-8">
+                <p class="hidden-transition text-4xl lg:text-6xl font-bold">thoughts()</p>
+                <div class="max-w-5xl flex flex-col gap-4 lg:gap-6"> 
+                    <div class="flex flex-col gap-2 lg:gap-4">
+                        <p class="hidden-transition text-xl lg:text-3xl font-bold">Will AI replace programmers?</p>
+                        <p class="hidden-transition">No, I don't think so, but I also believe that AI will become a mandatory tool, enabling programmers to concentrate on the interesting and complex aspects of their job.</p>
+                    </div>
+                    <div class="flex flex-col gap-2 lg:gap-4">
+                        <p class="hidden-transition text-xl lg:text-3xl font-bold">A Programmer can't do everything</p>
+                        <p class="hidden-transition">I feel like many people who don't program have this impression that every programmer can hack into whatever they want, create a complex multiplayer game by themselves in a week, or develop a Twitter replacement in a day. It's important to keep in mind that there's a reason why there are thousands of people working at these big tech companies. A programmer isn't a 100-person army.</p>
+                    </div>
+                    <div class="flex flex-col gap-2 lg:gap-4">
+                        <p class="hidden-transition text-xl lg:text-3xl font-bold">Why you should give Neovim/Vim a try.</p>
+                        <p class="hidden-transition">Before Neovim, I, like many, heavily relied on VSCode shortcuts for efficiency. However, finding VSCode limiting, I tried a Vim extension, and the speed boost was impressive. During a slow laptop vacation, I switched to Neovim and never looked back. Returning home, I made Neovim my default for its superior experience and increased productivity. I believe everyone should give Neovim or Vim a try; it can genuinely enhance productivity and is a fun tool to use as well.</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <div class="h-[150px] relative bg-skills">
-            <div class="custom-shape-divider-bottom-1696313366">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="fill-primary"></path>
-                </svg>
-            </div> 
-        </div>
-        <section id="thoughts">
-            <h2 class="hidden-transition">thoughts()</h2>
-            <div class="content-wrapper"> 
-                <div>
-                    <h3 class="hidden-transition">Will AI replace programmers?</h2>
-                    <p class="hidden-transition">No, I don't think so, but I also believe that AI will become a mandatory tool, enabling programmers to concentrate on the interesting and complex aspects of their job.</p>
-                </div>
-                <div>
-                    <h3 class="hidden-transition">A Programmer can't do everything</h2>
-                    <p class="hidden-transition">I feel like many people who don't program have this impression that every programmer can hack into whatever they want, create a complex multiplayer game by themselves in a week, or develop a Twitter replacement in a day. It's important to keep in mind that there's a reason why there are thousands of people working at these big tech companies. A programmer isn't a 100-person army.</p>
-                </div>
-                <div>
-                    <h3 class="hidden-transition">Why you should give Neovim/Vim a try.</h2>
-                    <p class="hidden-transition">Before Neovim, I, like many, heavily relied on VSCode shortcuts for efficiency. However, finding VSCode limiting, I tried a Vim extension, and the speed boost was impressive. During a slow laptop vacation, I switched to Neovim and never looked back. Returning home, I made Neovim my default for its superior experience and increased productivity. I believe everyone should give Neovim or Vim a try; it can genuinely enhance productivity and is a fun tool to use as well.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="links">
-            <a href="https://www.youtube.com/channel/UCdOTbcew6jv7cjx8o1Wqhig" class="social-media-link">
+            </section>
+        </main>
+        <footer>
+            <a href="https://www.youtube.com/channel/UCdOTbcew6jv7cjx8o1Wqhig">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" aria-label="YouTube"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
-                <span>YouTube</span>
+                    <span>YouTube</span>
             </a>
-            <a href="https://www.twitch.tv/maxtheturtle0" class="social-media-link">
+            <a href="https://www.twitch.tv/maxtheturtle0">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-label="Twitch"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M391.17,103.47H352.54v109.7h38.63ZM285,103H246.37V212.75H285ZM120.83,0,24.31,91.42V420.58H140.14V512l96.53-91.42h77.25L487.69,256V0ZM449.07,237.75l-77.22,73.12H294.61l-67.6,64v-64H140.14V36.58H449.07Z"/>
                 </svg>
                 <span>Twitch</span> 
             </a>
-            <a href="https://twitter.com/MaxTheTurtle0" class="social-media-link">
+            <a href="https://twitter.com/MaxTheTurtle0">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-label="Twitter"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
                 </svg>
                 <span>Twitter</span>
             </a>
-            <a href="https://www.linkedin.com/" class="social-media-link">
+            <a href="https://www.linkedin.com/">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-label="LinkedIn"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
                 </svg>
                 <span>LinkedIn</span>
             </a>
-            <a href="mailto:antonescu496@gmail.com" class="social-media-link">
+            <a href="mailto:antonescu496@gmail.com">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-label="E-Mail"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
                 </svg>
                 <span>E-Mail</span>
             </a>
-            <a href="https://github.com/MaxTheTurtle0" class="social-media-link">
+            <a href="https://github.com/MaxTheTurtle0">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" aria-label="GitHub"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
                 </svg>
                 <span>GitHub</span>
             </a>
-        </div> 
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
