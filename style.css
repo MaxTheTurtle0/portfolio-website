@@ -26,6 +26,10 @@ section {
     @apply block h-0.5 w-0 bg-black transition-all content-[''] duration-300;
 }
 
+.nav-flex-item a:hover:after {
+    @apply w-full;
+}
+
 @media (max-height: 575px) {
     .indicator {
         display: none;
@@ -57,16 +61,19 @@ section {
     left: -15px;
     animation-delay: 0s;
 }
+
 .indicator span:nth-child(2) {
     top: 0;
     left: 0;
     animation-delay: 0.2s;
 }
+
 .indicator span:nth-child(3) {
     top: 15px;
     left: 15px;
     animation-delay: 0.4s;
 }
+
 .indicator span:nth-child(4) {
     top: 30px;
     left: 30px;
@@ -88,44 +95,22 @@ section {
     }
 }
 
-.nav-flex-item a:hover:after {
-    width: 100%;
-}
-
 a {
-    text-decoration: none;
-    color: #fff;
+    @apply text-white;
 }
 
 .hidden-transition {
-    opacity: 0;
-    filter: blur(5px);
-    transition: all 1s;
+    @apply opacity-0 -translate-x-4 blur-sm transition-all duration-1000;
 }
 
 .show {
-    opacity: 1;
-    filter: blur(0);
+    @apply opacity-100 translate-x-0 blur-0;
 }
 
-#my-projects {
-    padding: 1rem;
-    border-radius: 1em;
-}
-
-.content-hover-blur div, .content-hover-blur li { 
-    transition: all 250ms ease-in-out;
-}
-
-.content-hover-blur:hover div, .content-hover-blur:hover li {
-    opacity: 0.5;
-    filter: blur(2px);
-}
-
-
-.content-hover-blur div:hover, .content-hover-blur li:hover {
-    opacity: 1;
-    filter: blur(0);
+@media (prefers-reduced-motion: reduce) {
+    .hidden-transition {
+        transition: none;
+    } 
 }
 
 input[type="checkbox"]:checked ~ nav {
@@ -143,7 +128,6 @@ input[type="checkbox"]:checked ~ nav {
     background-color: #fff;
     border-radius: 50%;
     border: 0;
-    padding: 0;
     margin: 0.5rem;
 }
 
@@ -180,13 +164,10 @@ input[type="checkbox"]:checked ~ label span {
     background-color: transparent;
 } 
 
-
-@media (prefers-reduced-motion: reduce) {
-    .hidden-transition {
-        transition: none;
-    } 
-}
-
+/**
+ * Custom shape dividers
+ * https://www.shapedivider.app/
+ */
 .custom-shape-divider-bottom-1696312862 {
     position: absolute;
     bottom: 0;

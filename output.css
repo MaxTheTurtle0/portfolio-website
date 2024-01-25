@@ -703,6 +703,14 @@ video {
   bottom: 2.5rem;
 }
 
+.bottom-12 {
+  bottom: 3rem;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
 .bottom-20 {
   bottom: 5rem;
 }
@@ -733,14 +741,6 @@ video {
 
 .top-0 {
   top: 0px;
-}
-
-.bottom-12 {
-  bottom: 3rem;
-}
-
-.bottom-16 {
-  bottom: 4rem;
 }
 
 .isolate {
@@ -926,8 +926,36 @@ video {
   height: 0.25rem;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
 .h-16 {
   height: 4rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-9 {
+  height: 2.25rem;
 }
 
 .h-\[150px\] {
@@ -941,6 +969,19 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.max-h-96 {
+  max-height: 24rem;
+}
+
+.max-h-fit {
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 
 .min-h-\[calc\(100dvh-4rem\)\] {
@@ -965,6 +1006,22 @@ video {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -1040,8 +1097,18 @@ video {
   transform-origin: top;
 }
 
+.-translate-x-4 {
+  --tw-translate-x: -1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-x-0 {
   --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-4 {
+  --tw-translate-x: 1rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1526,6 +1593,18 @@ video {
 
 .justify-items-stretch {
   justify-items: stretch;
+}
+
+.gap-0 {
+  gap: 0px;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-16 {
+  gap: 4rem;
 }
 
 .gap-2 {
@@ -2013,7 +2092,7 @@ video {
   background-color: rgb(60 49 221 / var(--tw-bg-opacity));
 }
 
-.bg-skills {
+.bg-tools {
   --tw-bg-opacity: 1;
   background-color: rgb(0 202 202 / var(--tw-bg-opacity));
 }
@@ -2116,7 +2195,7 @@ video {
   fill: #3c31dd;
 }
 
-.fill-skills {
+.fill-tools {
   fill: #00caca;
 }
 
@@ -2407,6 +2486,14 @@ video {
   -moz-osx-font-smoothing: auto;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
 .bg-blend-normal {
   background-blend-mode: normal;
 }
@@ -2584,6 +2671,11 @@ video {
 
 .blur {
   --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-sm {
+  --tw-blur: blur(4px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -2769,6 +2861,10 @@ section {
   content: var(--tw-content);
 }
 
+.nav-flex-item a:hover:after {
+  width: 100%;
+}
+
 @media (max-height: 575px) {
   .indicator {
     display: none;
@@ -2839,43 +2935,34 @@ section {
   }
 }
 
-.nav-flex-item a:hover:after {
-  width: 100%;
-}
-
 a {
-  text-decoration: none;
-  color: #fff;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hidden-transition {
+  --tw-translate-x: -1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   opacity: 0;
-  filter: blur(5px);
-  transition: all 1s;
+  --tw-blur: blur(4px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1000ms;
 }
 
 .show {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   opacity: 1;
-  filter: blur(0);
+  --tw-blur: blur(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-#my-projects {
-  padding: 1rem;
-  border-radius: 1em;
-}
-
-.content-hover-blur div, .content-hover-blur li {
-  transition: all 250ms ease-in-out;
-}
-
-.content-hover-blur:hover div, .content-hover-blur:hover li {
-  opacity: 0.5;
-  filter: blur(2px);
-}
-
-.content-hover-blur div:hover, .content-hover-blur li:hover {
-  opacity: 1;
-  filter: blur(0);
+@media (prefers-reduced-motion: reduce) {
+  .hidden-transition {
+    transition: none;
+  }
 }
 
 input[type="checkbox"]:checked ~ nav {
@@ -2893,7 +2980,6 @@ input[type="checkbox"]:checked ~ nav {
   background-color: #fff;
   border-radius: 50%;
   border: 0;
-  padding: 0;
   margin: 0.5rem;
 }
 
@@ -2930,11 +3016,10 @@ input[type="checkbox"]:checked ~ label span {
   background-color: transparent;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .hidden-transition {
-    transition: none;
-  }
-}
+/**
+ * Custom shape dividers
+ * https://www.shapedivider.app/
+ */
 
 .custom-shape-divider-bottom-1696312862 {
   position: absolute;
@@ -3047,6 +3132,12 @@ input[type="checkbox"]:checked ~ label span {
   }
 }
 
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -3078,12 +3169,12 @@ input[type="checkbox"]:checked ~ label span {
     inset: 0px;
   }
 
-  .xs\:right-auto {
-    right: auto;
-  }
-
   .xs\:bottom-36 {
     bottom: 9rem;
+  }
+
+  .xs\:right-auto {
+    right: auto;
   }
 
   .xs\:mb-16 {
@@ -3125,6 +3216,14 @@ input[type="checkbox"]:checked ~ label span {
 }
 
 @media (min-width: 640px) {
+  .sm\:h-12 {
+    height: 3rem;
+  }
+
+  .sm\:gap-8 {
+    gap: 2rem;
+  }
+
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -3136,6 +3235,10 @@ input[type="checkbox"]:checked ~ label span {
 }
 
 @media (min-width: 1024px) {
+  .lg\:gap-16 {
+    gap: 4rem;
+  }
+
   .lg\:gap-4 {
     gap: 1rem;
   }
