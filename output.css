@@ -803,6 +803,11 @@ video {
   clear: none;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -938,6 +943,18 @@ video {
   height: 4rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-28 {
+  height: 7rem;
+}
+
 .h-4 {
   height: 1rem;
 }
@@ -1006,6 +1023,10 @@ video {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-4 {
@@ -1628,6 +1649,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-7 {
+  gap: 1.75rem;
+}
+
 .gap-8 {
   gap: 2rem;
 }
@@ -2099,7 +2124,7 @@ video {
 
 .bg-tools {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 202 202 / var(--tw-bg-opacity));
+  background-color: rgb(0 128 144 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -2201,7 +2226,7 @@ video {
 }
 
 .fill-tools {
-  fill: #00caca;
+  fill: #008090;
 }
 
 .object-contain {
@@ -2333,6 +2358,11 @@ video {
 
 .text-7xl {
   font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
   line-height: 1;
 }
 
@@ -2849,6 +2879,7 @@ section {
 .nav-flex-item a {
   font-size: 1.25rem;
   line-height: 1.75rem;
+  font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
@@ -3240,6 +3271,14 @@ input[type="checkbox"]:checked ~ label span {
 }
 
 @media (min-width: 1024px) {
+  .lg\:h-24 {
+    height: 6rem;
+  }
+
+  .lg\:h-20 {
+    height: 5rem;
+  }
+
   .lg\:gap-16 {
     gap: 4rem;
   }
@@ -3266,6 +3305,16 @@ input[type="checkbox"]:checked ~ label span {
     line-height: 1;
   }
 
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -3273,8 +3322,8 @@ input[type="checkbox"]:checked ~ label span {
 }
 
 @media (min-width: 1280px) {
-  .xl\:text-7xl {
-    font-size: 4.5rem;
+  .xl\:text-8xl {
+    font-size: 6rem;
     line-height: 1;
   }
 }

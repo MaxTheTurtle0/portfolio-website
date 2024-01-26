@@ -19,7 +19,7 @@ section {
 }
 
 .nav-flex-item a {
-    @apply text-black text-xl;
+    @apply text-black text-xl font-semibold;
 }
 
 .nav-flex-item a:after {

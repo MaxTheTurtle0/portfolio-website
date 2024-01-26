@@ -13,7 +13,7 @@ const defaultTheme = require("tailwindcss/defaultTheme")
                     primary: "#202731",
                     intro: "#ee6e3d",
                     projects: "#3c31dd",
-                    tools: "#00caca",
+                    tools: "#008090",
                 },
             },
         },
