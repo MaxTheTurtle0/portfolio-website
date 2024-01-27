@@ -99,7 +99,7 @@ a {
     @apply text-white;
 }
 
-.hidden-transition {
+.hidden-transition, .hidden-transition-svg {
     @apply opacity-0 -translate-x-4 blur-sm transition-all duration-1000;
 }
 
